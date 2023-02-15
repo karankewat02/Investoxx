@@ -6,6 +6,8 @@ const POLARDBconnection = require('./POLARDB.config');
 
 const authRoute = require('./routes/auth');
 const predictionRoute = require('./routes/prediction');
+const portfolioRoute = require('./routes/portfolio');
+const watchlistRoute = require('./routes/watchlist');
 
 const bodyParser = require('body-parser');
 const data = require('./stocks.json');
@@ -19,6 +21,12 @@ app.use('/api/auth', authRoute);
 
 //PREDICTION ROUTES
 app.use('/api/prediction', predictionRoute);
+
+//PORTFOLIO ROUTES
+app.use('/api/portfolio', portfolioRoute);
+
+// WATCHLIST ROUTES
+app.use('/api/watchlist', watchlistRoute);
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);

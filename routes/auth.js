@@ -23,6 +23,28 @@ router.post('/register', (req, res) => {
             console.log(err);
             res.status(400).send({error: err, message: 'Error email already registered'});
         } else {
+
+            const table_base_name = email.replace(/[@.]/g, "")
+
+            const CREATE_PORTFOLIO = `CREATE TABLE ${table_base_name}_portfolio (symbol VARCHAR(10) PRIMARY KEY,name VARCHAR(50),predicted_price DECIMAL(10,2),added_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP);`;
+            const CREATE_WATCHLIST = `CREATE TABLE ${table_base_name}_watchlist (symbol VARCHAR(10) PRIMARY KEY,name VARCHAR(50),added_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP);`;
+            
+            POLARDBconnection.query(CREATE_PORTFOLIO , (err, result) => {
+                if (err) {
+                    console.log(err);
+                } else {
+                    console.log('Portfolio and WATCHLIST table created');
+                }
+            });
+
+            POLARDBconnection.query(CREATE_WATCHLIST , (err, result) => {
+                if (err) {
+                    console.log(err);
+                } else {
+                    console.log('Portfolio and WATCHLIST table created');
+                }
+            });
+
             res.status(200).send({message: 'User registered successfully', result});
         }
     });
