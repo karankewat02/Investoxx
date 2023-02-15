@@ -2,10 +2,10 @@ require('dotenv').config()
 const mysql = require('mysql2');
 
 const POLARDBconnection = mysql.createPool({
-    host:"testendpoint.mysql.polardb.ap-south-1.rds.aliyuncs.com",
-    user:"karankewat",
-    password:"Karan@123",
-    database:"testing",
+    host:"testing-endpoint.mysql.polardb.ap-south-1.rds.aliyuncs.com",
+    user:"investoxx",
+    password:"investoxx@123",
+    database:"testingpolardb",
     // host: process.env.ENDPOINT,
     // user: process.env.USERNAME,
     // password: process.env.PASSWORD,

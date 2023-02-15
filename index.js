@@ -3,7 +3,10 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const POLARDBconnection = require('./POLARDB.config');
+
 const authRoute = require('./routes/auth');
+const predictionRoute = require('./routes/prediction');
+
 const bodyParser = require('body-parser');
 const data = require('./stocks.json');
 const midCap = require('./data.json');
@@ -13,6 +16,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //AUTH ROUTES
 app.use('/api/auth', authRoute);
+
+//PREDICTION ROUTES
+app.use('/api/prediction', predictionRoute);
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
