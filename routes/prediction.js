@@ -49,7 +49,7 @@ router.post('/add-prediction', async (req, res) => {
             console.log(err);
             res.status(500).send({error: err});
         } else {
-            res.status(200).send({message: 'Data Fetched', result});
+            res.status(200).send({message: 'Data Added', result});
         }
     });
 
