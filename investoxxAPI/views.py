@@ -9,58 +9,13 @@ from sklearn.linear_model import LinearRegression
 import datetime
 import json
 
-
+import nltk
+from nltk.sentiment import SentimentIntensityAnalyzer
 
 import requests
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
-
-
-
-
-# def RSI(df, n=14):
-#     delta = df['close'].diff()
-#     gain = delta.where(delta > 0, 0)
-#     loss = abs(delta.where(delta < 0, 0))
-#     avg_gain = gain.rolling(window=n).mean()
-#     avg_loss = loss.rolling(window=n).mean()
-#     rs = avg_gain / avg_loss
-#     return 100 - 100 / (1 + rs)
-
-# def EMA(df, n=14):
-#     ema = df['close'].ewm(span=n, adjust=False).mean()
-#     return ema
-
-
-# def get_stock_data(symbol):
-#     today = datetime.datetime.now().date()
-#     two_months_ago = today - datetime.timedelta(days=60)
-#     url = f"https://api.polygon.io/v2/aggs/ticker/{symbol}/range/1/day/{two_months_ago}/{today}?adjusted=true&sort=desc&limit=1000&apiKey=_UQ5h1LONGUswPwxAjNXISHMSwRoWAtH"
-#     api_key = "Bearer _UQ5h1LONGUswPwxAjNXISHMSwRoWAtH"
-#     headers = {'Authorization': api_key}
-#     response = requests.get(url, headers=headers)
-#     data = response.json()
-#     return pd.DataFrame(data["results"])
-
-
-# def stock_data_with_indicators(symbol):
-#     df = get_stock_data(symbol)
-#     df['RSI'] = RSI(df)
-#     df['EMA'] = EMA(df)
-#     return df
-
-
-# def predict_performance(symbol):
-#     df = stock_data_with_indicators(symbol)
-#     X = df[['RSI', 'EMA']]
-#     y = df['close']
-#     model = LinearRegression()
-#     model.fit(X, y)
-#     prediction = model.predict(X.iloc[-1].values.reshape(1, -1))[0]
-#     current_price = df['close'].iloc[-1]
-#     prediction_change = (prediction - current_price) / current_price * 100
-#     return prediction_change
 
 
 def predict_stock_performance(symbol):
@@ -112,6 +67,7 @@ def predict_stock_performance(symbol):
         'priceDiffrece': priceDiffrece
     }
 
+    print("Successfull",response)
 
 
     return response 
@@ -132,3 +88,12 @@ def get_data(request):
     else:
         return JsonResponse({'error': 'method not allowed'})
 
+    
+@csrf_exempt
+def analyze_news(request):
+   if request.method == 'POST':
+        data = json.loads(request.body)
+        news = data['news']
+        sid = SentimentIntensityAnalyzer()
+        sentiment = sid.polarity_scores(news)
+        return JsonResponse({'sentiment': sentiment})
