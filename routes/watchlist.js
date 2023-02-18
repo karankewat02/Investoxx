@@ -29,7 +29,7 @@ router.post('/addStock', (req, res) => {
 
 // DELETE STOCK FROM WATCHLIST
 
-router.delete('/deleteStock', (req, res) => {
+router.post('/deleteStock', (req, res) => {
     const symbol = req.body.symbol;
     const email = req.body.email;
 
@@ -43,6 +43,26 @@ router.delete('/deleteStock', (req, res) => {
             res.status(400).send({error: err, message: 'Error deleting stock from WATCHLIST'});
         } else {
             res.status(200).send({message: 'Stock deleted from WATCHLIST successfully', result});
+        }
+    });
+
+})
+
+// GET WATCHLIST
+
+router.get('/getWatchlist/:email', (req, res) => {
+    const email = req.params.email;
+
+    const table_base_name = email.replace(/[@.]/g, "")
+
+    const SQL = `SELECT * FROM ${table_base_name}_watchlist`;
+
+    POLARDBconnection.query(SQL, (err, result) => {
+        if (err) {
+            console.log(err);
+            res.status(400).send({error: err, message: 'Error getting WATCHLIST'});
+        } else {
+            res.status(200).send({message: 'WATCHLIST retrieved successfully', result});
         }
     });
 

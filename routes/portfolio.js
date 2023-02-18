@@ -30,7 +30,7 @@ router.post('/addStock', (req, res) => {
 
 // DELETE STOCK FROM PORTFOLIO
 
-router.delete('/deleteStock', (req, res) => {
+router.post('/deleteStock', (req, res) => {
     const symbol = req.body.symbol;
     const email = req.body.email;
 
@@ -45,6 +45,30 @@ router.delete('/deleteStock', (req, res) => {
         } else {
             res.status(200).send({message: 'Stock deleted from portfolio successfully', result});
         }
+    });
+
+})
+
+
+// GET PORTFOLIO
+
+router.get('/getPortfolio/:email', (req, res) => {
+    const email = req.params.email;
+
+    const table_base_name = email.replace(/[@.]/g, "")
+
+    const SQL = `SELECT * FROM ${table_base_name}_portfolio`;
+    POLARDBconnection.query(SQL, (err, result) => {
+        if (err) {
+            console.log(err);
+            res.status(500).send({error: err});
+        } else {
+            console.log(result)
+            let code = 200;
+            let message = 'Success';
+            res.status(code).send({message: message, result});
+        }
+
     });
 
 })

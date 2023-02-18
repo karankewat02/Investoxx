@@ -1,3210 +1,612 @@
-[
-    {
-        "symbol": "AA",
-        "Security": "Alcoa",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Aluminum",
-        "Headquarters Location": "Pittsburgh, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ACHC",
-        "Security": "Acadia Healthcare",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Facilities",
-        "Headquarters Location": "Franklin, Tennessee",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ACIW",
-        "Security": "ACI Worldwide",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Application Software",
-        "Headquarters Location": "Miami, Florida",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ACM",
-        "Security": "AECOM",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Construction & Engineering",
-        "Headquarters Location": "Dallas, Texas",
-        "SEC filings": "reports"
-    },
-    {
+{
+    "result": [
+      {
+        "symbol": "AAPL",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "ABNB",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "ACR",
+        "stock_type": "small"
+      },
+      {
         "symbol": "ADC",
-        "Security": "Agree Realty",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Retail REITs",
-        "Headquarters Location": "Bloomfield Hills, Michigan",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "ADNT",
-        "Security": "Adient",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Auto Parts & Equipment",
-        "Headquarters Location": "Plymouth, Michigan",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "AFG",
-        "Security": "American Financial Group",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Multi-line Insurance",
-        "Headquarters Location": "Cincinnati, Ohio",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "AGCO",
-        "Security": "AGCO",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Agricultural & Farm Machinery",
-        "Headquarters Location": "Duluth, Georgia",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "ADP",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "ADSK",
+        "stock_type": "large"
+      },
+      {
         "symbol": "AIRC",
-        "Security": "Apartment Income REIT",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Residential REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ALE",
-        "Security": "ALLETE",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Electric Utilities",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ALGM",
-        "Security": "Allegro MicroSystems",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Semiconductors",
-        "Headquarters Location": "Manchester, New Hampshire",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "AM",
-        "Security": "Antero Midstream",
-        "GICS Sector": "Energy",
-        "GICS Sub-Industry": "Oil & Gas Storage & Transportation",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "ALGN",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "ALXO",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "AMAT",
+        "stock_type": "large"
+      },
+      {
         "symbol": "AMED",
-        "Security": "Amedisys",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Services",
-        "Headquarters Location": "Baton Rouge, Louisiana",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "AMG",
-        "Security": "Affiliated Managers Group",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Asset Management & Custody Banks",
-        "Headquarters Location": "West Palm Beach, Florida",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "AMKR",
-        "Security": "Amkor Technology",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Semiconductors",
-        "Headquarters Location": "Tempe, Arizona",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "AN",
-        "Security": "AutoNation",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Automotive Retail",
-        "Headquarters Location": "Fort Lauderdale, Florida",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "AR",
-        "Security": "Antero Resources",
-        "GICS Sector": "Energy",
-        "GICS Sub-Industry": "Oil & Gas Exploration & Production",
-        "Headquarters Location": "Denver, Colorado",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ARW",
-        "Security": "Arrow Electronics",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Technology Distributors",
-        "Headquarters Location": "Centennial, Colorado",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ARWR",
-        "Security": "Arrowhead Pharmaceuticals",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Biotechnology",
-        "Headquarters Location": "Pasadena, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ASB",
-        "Security": "Associated Bank",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Green Bay, Wisconsin",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ASGN",
-        "Security": "ASGN",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Human Resource & Employment Services",
-        "Headquarters Location": "Glen Allen, VA",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ASH",
-        "Security": "Ashland Global",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Diversified Chemicals",
-        "Headquarters Location": "Wilmington, Delaware",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ATR",
-        "Security": "AptarGroup",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Metal & Glass Containers",
-        "Headquarters Location": "Crystal Lake, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "AVNT",
-        "Security": "Avient",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Specialty Chemicals",
-        "Headquarters Location": "Avon Lake, Ohio",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "AVT",
-        "Security": "Avnet",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Technology Distributors",
-        "Headquarters Location": "Phoenix, Arizona",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "AXON",
-        "Security": "Axon Enterprise",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Aerospace & Defense",
-        "Headquarters Location": "Scottsdale, Arizona",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "AYI",
-        "Security": "Acuity Brands",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Electrical Components & Equipment",
-        "Headquarters Location": "Atlanta, Georgia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "AZPN",
-        "Security": "Aspen Technology",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Application Software",
-        "Headquarters Location": "Bedford, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "AZTA",
-        "Security": "Azenta",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Life Sciences Tools & Services",
-        "Headquarters Location": "Chelmsford, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "BC",
-        "Security": "Brunswick",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Leisure Products",
-        "Headquarters Location": "Mettawa, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "BCO",
-        "Security": "Brink's",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Security & Alarm Services",
-        "Headquarters Location": "Richmond, Virginia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "BDC",
-        "Security": "Belden",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Electronic Components",
-        "Headquarters Location": "St. Louis, Missouri",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "BHF",
-        "Security": "Brighthouse Financial",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Life & Health Insurance",
-        "Headquarters Location": "Charlotte, North Carolina",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "BJ",
-        "Security": "BJ's Wholesale Club",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Hypermarkets & Super Centers",
-        "Headquarters Location": "Marlborough, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "BKH",
-        "Security": "Black Hills Corporation",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Multi-Utilities",
-        "Headquarters Location": "Rapid City, South Dakota",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "BLD",
-        "Security": "TopBuild Corp.",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Homebuilding",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "BLDR",
-        "Security": "Builders FirstSource",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Building Products",
-        "Headquarters Location": "Dallas, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "BLKB",
-        "Security": "Blackbaud",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Application Software",
-        "Headquarters Location": "Charleston, South Carolina",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "BOH",
-        "Security": "Bank of Hawaii",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Honolulu, Hawaii",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "BRBR",
-        "Security": "BellRing Brands",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Packaged Foods & Meats",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "BRKR",
-        "Security": "Bruker",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Equipment",
-        "Headquarters Location": "Billerica, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "BRX",
-        "Security": "Brixmor Property Group",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Retail REITs",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "BYD",
-        "Security": "Boyd Gaming",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Casinos & Gaming",
-        "Headquarters Location": "Las Vegas, Nevada",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CABO",
-        "Security": "Cable One",
-        "GICS Sector": "Communication Services",
-        "GICS Sub-Industry": "Cable & Satellite",
-        "Headquarters Location": "Phoenix, Arizona",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CACI",
-        "Security": "CACI International",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Diversified Support Services",
-        "Headquarters Location": "Reston, Virginia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CADE",
-        "Security": "Cadence Bank",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Tupelo, Mississippi Houston, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CALX",
-        "Security": "Calix",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Application Software",
-        "Headquarters Location": "San Jose, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CAR",
-        "Security": "Avis Budget Group",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Trucking",
-        "Headquarters Location": "Parsippany, New Jersey",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CASY",
-        "Security": "Casey's General Stores",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Food Retail",
-        "Headquarters Location": "Ankeny, Iowa",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CATY",
-        "Security": "Cathay General Bancorp",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Los Angeles, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CBRL",
-        "Security": "Cracker Barrel",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Restaurants",
-        "Headquarters Location": "Lebanon, Tennessee",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CBSH",
-        "Security": "Commerce Bancshares",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Kansas City, Missouri",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CBT",
-        "Security": "Cabot Corp",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Diversified Chemicals",
-        "Headquarters Location": "Boston, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CC",
-        "Security": "Chemours",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Diversified Chemicals",
-        "Headquarters Location": "Wilmington, Delaware",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CELH",
-        "Security": "Celsius Holdings",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Soft Drinks",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CFR",
-        "Security": "Frost Bank",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "San Antonio, Texas",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "APPH",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "AVIR",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "AZN",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "BABA",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "BDN",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "BLI",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "BORR",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "BYND",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "CANO",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "CDNS",
+        "stock_type": "large"
+      },
+      {
         "symbol": "CGNX",
-        "Security": "Cognex",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Electronic Equipment & Instruments",
-        "Headquarters Location": "Natick, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "CHDN",
-        "Security": "Churchill Downs Inc.",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Casinos & Gaming",
-        "Headquarters Location": "Louisville, Kentucky",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "CHE",
-        "Security": "Chemed Corp.",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Services",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "CHH",
-        "Security": "Choice Hotels",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Hotels, Resorts & Cruise Lines",
-        "Headquarters Location": "Rockville, Maryland",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "CHTR",
+        "stock_type": "large"
+      },
+      {
         "symbol": "CHX",
-        "Security": "ChampionX",
-        "GICS Sector": "Energy",
-        "GICS Sub-Industry": "Oil & Gas Equipment & Services",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "CIEN",
-        "Security": "Ciena",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Communications Equipment",
-        "Headquarters Location": "Hanover, Maryland",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "CLF",
-        "Security": "Cleveland-Cliffs",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Steel",
-        "Headquarters Location": "Cleveland, Ohio",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "large"
+      },
+      {
         "symbol": "CLH",
-        "Security": "Clean Harbors",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Environmental & Facilities Services",
-        "Headquarters Location": "Norwell, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CMC",
-        "Security": "Commercial Metals",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Steel",
-        "Headquarters Location": "Irving, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CNO",
-        "Security": "CNO Financial Group",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Life & Health Insurance",
-        "Headquarters Location": "Carmel, Indiana",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CNX",
-        "Security": "CNX Resources",
-        "GICS Sector": "Energy",
-        "GICS Sub-Industry": "Oil & Gas Exploration & Production",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "CNXC",
-        "Security": "Concentrix",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Data Processing & Outsourced Services",
-        "Headquarters Location": "Newark, California",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "COHR",
-        "Security": "Coherent Corp.",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Electronic Components",
-        "Headquarters Location": "Saxonburg, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "COKE",
-        "Security": "Coca-Cola Consolidated",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Soft Drinks",
-        "Headquarters Location": "Charlotte, North Carolina",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "COLM",
-        "Security": "Columbia Sportswear",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Apparel, Accessories & Luxury Goods",
-        "Headquarters Location": "Portland, Oregon",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "COTY",
-        "Security": "Coty",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Personal Products",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "CPRI",
-        "Security": "Capri Holdings",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Apparel, Accessories & Luxury Goods",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CR",
-        "Security": "Crane",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Industrial Machinery",
-        "Headquarters Location": "Stamford, Connecticut",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CRI",
-        "Security": "Carter's",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Apparel, Accessories & Luxury Goods",
-        "Headquarters Location": "Atlanta, Georgia",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "CROX",
-        "Security": "Crocs",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Footwear",
-        "Headquarters Location": "Broomfield, Colorado",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "CRUS",
-        "Security": "Cirrus Logic",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Semiconductors",
-        "Headquarters Location": "Austin, Texas",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "CSCO",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "CSGP",
+        "stock_type": "large"
+      },
+      {
         "symbol": "CSL",
-        "Security": "Carlisle Companies",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Industrial Conglomerates",
-        "Headquarters Location": "Phoenix, Arizona",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "large"
+      },
+      {
+        "symbol": "CSX",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "CTAS",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "CTSH",
+        "stock_type": "large"
+      },
+      {
         "symbol": "CUBE",
-        "Security": "CubeSmart",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Industrial REITs",
-        "Headquarters Location": "Malvern, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CUZ",
-        "Security": "Cousins Properties",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Office REITs",
-        "Headquarters Location": "Atlanta, Georgia",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "large"
+      },
+      {
         "symbol": "CVLT",
-        "Security": "CommVault Systems",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Systems Software",
-        "Headquarters Location": "Tinton Falls, New Jersey",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "CW",
-        "Security": "Curtiss-Wright",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Aerospace & Defense",
-        "Headquarters Location": "Davidson, North Carolina",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "CWH",
+        "stock_type": "small"
+      },
+      {
         "symbol": "DAN",
-        "Security": "Dana",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Auto Parts & Equipment",
-        "Headquarters Location": "Maumee, Ohio",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "DAR",
-        "Security": "Darling Ingredients",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Agricultural Products",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "DCI",
-        "Security": "Donaldson",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Industrial Machinery",
-        "Headquarters Location": "Bloomington, Minnesota",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "large"
+      },
+      {
         "symbol": "DECK",
-        "Security": "Deckers Brands",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Footwear",
-        "Headquarters Location": "Goleta, California",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "large"
+      },
+      {
         "symbol": "DEI",
-        "Security": "Douglas Emmett",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Office REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "DINO",
-        "Security": "HF Sinclair",
-        "GICS Sector": "Energy",
-        "GICS Sub-Industry": "Oil & Gas Refining & Marketing",
-        "Headquarters Location": "Dallas, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "DKS",
-        "Security": "Dick's Sporting Goods",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Specialty Stores",
-        "Headquarters Location": "Coraopolis, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "large"
+      },
+      {
+        "symbol": "DM",
+        "stock_type": "small"
+      },
+      {
         "symbol": "DOC",
-        "Security": "Physicians Realty Trust",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Health Care REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "DT",
-        "Security": "Dynatrace",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Application Software",
-        "Headquarters Location": "Waltham, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "DSX",
+        "stock_type": "small"
+      },
+      {
         "symbol": "DTM",
-        "Security": "DT Midstream",
-        "GICS Sector": "Energy",
-        "GICS Sub-Industry": "Oil & Gas Storage & Transportation",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "DY",
-        "Security": "Dycom Industries",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Construction & Engineering",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "EEFT",
-        "Security": "Euronet Worldwide",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Data Processing & Outsourced Services",
-        "Headquarters Location": "Leawood, Kansas",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "EGO",
+        "stock_type": "small"
+      },
+      {
         "symbol": "EGP",
-        "Security": "EastGroup Properties",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Industrial REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "EHC",
-        "Security": "Encompass Health",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Facilities",
-        "Headquarters Location": "Birmingham, Alabama",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "EME",
-        "Security": "Emcor",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Construction & Engineering",
-        "Headquarters Location": "Norwalk, Connecticut",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "ENOV",
-        "Security": "Enovis",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Equipment",
-        "Headquarters Location": "Wilmington, Delaware",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "ENPH",
+        "stock_type": "large"
+      },
+      {
         "symbol": "ENR",
-        "Security": "Energizer",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Household Products",
-        "Headquarters Location": "Town and Country, Missouri",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "ENS",
-        "Security": "EnerSys",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Electrical Components & Equipment",
-        "Headquarters Location": "Reading, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ENV",
-        "Security": "Envestnet",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Application Software",
-        "Headquarters Location": "Chicago, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "EPR",
-        "Security": "EPR Properties",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Specialized REITs",
-        "Headquarters Location": "Kansas City, Missouri",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ESAB",
-        "Security": "ESAB",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Industrial Machinery",
-        "Headquarters Location": "North Bethesda, Maryland",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ESNT",
-        "Security": "Essent Group Ltd.",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Thrifts & Mortgage Finance",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ETRN",
-        "Security": "Equitrans Midstream",
-        "GICS Sector": "Energy",
-        "GICS Sub-Industry": "Oil & Gas Storage & Transportation",
-        "Headquarters Location": "Canonsburg, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "EVR",
-        "Security": "Evercore",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Investment Banking & Brokerage",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "EWBC",
-        "Security": "East West Bancorp",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "EXEL",
-        "Security": "Exelixis",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Biotechnology",
-        "Headquarters Location": "Alameda, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "EXLS",
-        "Security": "EXL Service",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "IT Consulting & Other Services",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "EXP",
-        "Security": "Eagle Materials",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Construction Materials",
-        "Headquarters Location": "Dallas, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FAF",
-        "Security": "First American",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Property & Casualty Insurance",
-        "Headquarters Location": "Santa Ana, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FCFS",
-        "Security": "FirstCash",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Consumer Finance",
-        "Headquarters Location": "Fort Worth, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FBIN",
-        "Security": "Fortune Brands Innovations",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Building Products",
-        "Headquarters Location": "Deerfield, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FCN",
-        "Security": "FTI Consulting",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Research & Consulting Services",
-        "Headquarters Location": "Washington, D.C.",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FFIN",
-        "Security": "First Financial Bankshares",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FHI",
-        "Security": "Federated Hermes",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Asset Management & Custody Banks",
-        "Headquarters Location": "Pittsburgh, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FHN",
-        "Security": "First Horizon",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Memphis, Tennessee",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FICO",
-        "Security": "FICO",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Application Software",
-        "Headquarters Location": "Bozeman, Montana",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FIVE",
-        "Security": "Five Below",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Specialty Stores",
-        "Headquarters Location": "Philadelphia, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FL",
-        "Security": "Foot Locker",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Apparel Retail",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FLO",
-        "Security": "Flowers Foods",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Packaged Foods & Meats",
-        "Headquarters Location": "Thomasville, Georgia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FLR",
-        "Security": "Fluor",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Construction & Engineering",
-        "Headquarters Location": "Irving, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FLS",
-        "Security": "Flowserve",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Industrial Machinery",
-        "Headquarters Location": "Irving, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FNB",
-        "Security": "FNB Corporation",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Pittsburgh, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FOXF",
-        "Security": "Fox Factory",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Auto Parts & Equipment",
-        "Headquarters Location": "Duluth, Georgia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FR",
-        "Security": "First Industrial Realty Trust",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Industrial REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FULT",
-        "Security": "Fulton Financial Corporation",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Lancaster, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "FYBR",
-        "Security": "Frontier Communications",
-        "GICS Sector": "Communication Services",
-        "GICS Sub-Industry": "Integrated Telecommunication Services",
-        "Headquarters Location": "Norwalk, Connecticut",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "G",
-        "Security": "Genpact",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "IT Consulting & Other Services",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "GATX",
-        "Security": "GATX",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Construction Machinery & Heavy Trucks",
-        "Headquarters Location": "Chicago, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "GBCI",
-        "Security": "Glacier Bancorp",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Kalispell, Montana",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "GEF",
-        "Security": "Greif, Inc.",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Metal & Glass Containers",
-        "Headquarters Location": "Delaware, Ohio",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "GGG",
-        "Security": "Graco",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Industrial Machinery",
-        "Headquarters Location": "Minneapolis, Minnesota",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "GHC",
-        "Security": "Graham Holdings",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Education Services",
-        "Headquarters Location": "Arlington County, Virginia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "GME",
-        "Security": "GameStop",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Computer & Electronics Retail",
-        "Headquarters Location": "Grapevine, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "GMED",
-        "Security": "Globus Medical",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Equipment",
-        "Headquarters Location": "Audubon, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "GNTX",
-        "Security": "Gentex",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Auto Parts & Equipment",
-        "Headquarters Location": "Zeeland, Michigan",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "GO",
-        "Security": "Grocery Outlet",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Food Retail",
-        "Headquarters Location": "Emeryville, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "GPS",
-        "Security": "Gap",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Apparel Retail",
-        "Headquarters Location": "San Francisco, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "GT",
-        "Security": "Goodyear Tire & Rubber",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Tires & Rubber",
-        "Headquarters Location": "Akron, Ohio",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "GTLS",
-        "Security": "Chart Industries",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Industrial Machinery",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "GXO",
-        "Security": "GXO Logistics",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Air Freight & Logistics",
-        "Headquarters Location": "Greenwich, Connecticut",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "HAE",
-        "Security": "Haemonetics",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Supplies",
-        "Headquarters Location": "Boston, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "HALO",
-        "Security": "Halozyme",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Life Sciences Tools & Services",
-        "Headquarters Location": "San Diego, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "HBI",
-        "Security": "Hanesbrands",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Apparel, Accessories & Luxury Goods",
-        "Headquarters Location": "Winston-Salem, North Carolina",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "HE",
-        "Security": "Hawaiian Electric Industries",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Electric Utilities",
-        "Headquarters Location": "Honolulu, Hawaii",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "HELE",
-        "Security": "Helen of Troy Limited",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Household Appliances",
-        "Headquarters Location": "Hamilton, Bermuda",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "HIW",
-        "Security": "Highwoods Properties",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Office REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "HOG",
-        "Security": "Harley-Davidson",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Motorcycle Manufacturers",
-        "Headquarters Location": "Milwaukee, Wisconsin",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "HOMB",
-        "Security": "Home BancShares",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Conway, Arkansas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "HQY",
-        "Security": "HealthEquity",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Managed Health Care",
-        "Headquarters Location": "Draper, Utah",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "HR",
-        "Security": "Healthcare Realty Trust",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Health Care REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "HRB",
-        "Security": "H&R Block",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Specialized Consumer Services",
-        "Headquarters Location": "Kansas City, Missouri",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "HUBB",
-        "Security": "Hubbell Incorporated",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Industrial Machinery",
-        "Headquarters Location": "Shelton, Connecticut",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "HWC",
-        "Security": "Hancock Whitney",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Gulfport, Mississippi",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "HXL",
-        "Security": "Hexcel",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Aerospace & Defense",
-        "Headquarters Location": "Stamford, Connecticut",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "IAA",
-        "Security": "IAA, Inc.",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Diversified Support Services",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "IART",
-        "Security": "Integra Lifesciences Holdings",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Equipment",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "IBKR",
-        "Security": "Interactive Brokers",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Investment Banking & Brokerage",
-        "Headquarters Location": "Greenwich, Connecticut",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "IBOC",
-        "Security": "Intl Bancshares Corp",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Laredo, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ICUI",
-        "Security": "ICU Medical",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Supplies",
-        "Headquarters Location": "San Clemente, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "IDA",
-        "Security": "Idacorp",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Electric Utilities",
-        "Headquarters Location": "Boise, Idaho",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "INGR",
-        "Security": "Ingredion",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Agricultural Products",
-        "Headquarters Location": "Westchester, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "IPGP",
-        "Security": "IPG Photonics",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Electronic Manufacturing Services",
-        "Headquarters Location": "Oxford, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "IRDM",
-        "Security": "Iridium Communications",
-        "GICS Sector": "Communication Services",
-        "GICS Sub-Industry": "Alternative Carriers",
-        "Headquarters Location": "McLean, Virginia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "IRT",
-        "Security": "IRT Living",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Residential REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ITT",
-        "Security": "ITT",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Industrial Machinery",
-        "Headquarters Location": "Stamford, Connecticut",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "JAZZ",
-        "Security": "Jazz Pharmaceuticals",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Pharmaceuticals",
-        "Headquarters Location": "Dublin, Ireland",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "JBGS",
-        "Security": "JBG Smith",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Office REITs",
-        "Headquarters Location": "Bethesda, Maryland",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "JBL",
-        "Security": "Jabil Circuit",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Electronic Manufacturing Services",
-        "Headquarters Location": "St. Petersburg, Florida",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "JBLU",
-        "Security": "JetBlue",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Airlines",
-        "Headquarters Location": "Long Island City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "JEF",
-        "Security": "Jefferies",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Multi-Sector Holdings",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "JHG",
-        "Security": "Janus Henderson",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Asset Management & Custody Banks",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "JLL",
-        "Security": "Jones Lang LaSalle",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Real Estate Services",
-        "Headquarters Location": "Chicago, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "JWN",
-        "Security": "Nordstrom",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Department Stores",
-        "Headquarters Location": "Seattle, Washington",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "KBH",
-        "Security": "KB Home",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Homebuilding",
-        "Headquarters Location": "Los Angeles, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "KBR",
-        "Security": "KBR",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Diversified Support Services",
-        "Headquarters Location": "Houston, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "KD",
-        "Security": "Kyndryl",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "IT Consulting & Other Services",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "KEX",
-        "Security": "Kirby",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Marine",
-        "Headquarters Location": "Houston, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "KMPR",
-        "Security": "Kemper",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Multi-line Insurance",
-        "Headquarters Location": "Chicago, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "KMT",
-        "Security": "Kennametal",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Industrial Machinery",
-        "Headquarters Location": "Pittsburgh, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "KNSL",
-        "Security": "Kinsale Capital Group",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Property & Casualty Insurance",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "KNX",
-        "Security": "Knight-Swift",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Trucking",
-        "Headquarters Location": "Phoenix, Arizona",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "KRC",
-        "Security": "Kilroy Realty Corp",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Office REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "KRG",
-        "Security": "Kite Realty Group Trust",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Retail REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "KSS",
-        "Security": "Kohl's",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "General Merchandise Stores",
-        "Headquarters Location": "Menomonee Falls, Wisconsin",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LAD",
-        "Security": "Lithia Motors",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Automotive Retail",
-        "Headquarters Location": "Medford, Oregon",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LAMR",
-        "Security": "Lamar Advertising Company",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Specialized REITs",
-        "Headquarters Location": "Baton Rouge, Louisiana",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LANC",
-        "Security": "Lancaster Colony Corp",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Packaged Foods & Meats",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LEA",
-        "Security": "Lear",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Auto Parts & Equipment",
-        "Headquarters Location": "Southfield, Michigan",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LECO",
-        "Security": "Lincoln Electric",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Industrial Machinery",
-        "Headquarters Location": "Euclid, Ohio",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LEG",
-        "Security": "Leggett & Platt",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Home Furnishings",
-        "Headquarters Location": "Carthage, Missouri",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LFUS",
-        "Security": "Littelfuse",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Electronic Components",
-        "Headquarters Location": "Chicago, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LHCG",
-        "Security": "LHC Group",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Services",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LII",
-        "Security": "Lennox International",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Building Products",
-        "Headquarters Location": "Richardson, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LITE",
-        "Security": "Lumentum Holdings",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Communications Equipment",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LIVN",
-        "Security": "LivaNova",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Equipment",
-        "Headquarters Location": "Houston, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LNTH",
-        "Security": "Lantheus Holdings",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Supplies",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LNW",
-        "Security": "Light & Wonder",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Casinos & Gaming",
-        "Headquarters Location": "Las Vegas, Nevada",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LOPE",
-        "Security": "Grand Canyon Education",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Education Services",
-        "Headquarters Location": "Phoenix, Arizona",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LPX",
-        "Security": "Louisiana-Pacific",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Forest Products",
-        "Headquarters Location": "Nashville, Tennessee",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LSCC",
-        "Security": "Lattice Semiconductor",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Semiconductors",
-        "Headquarters Location": "Hillsboro, Oregon",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LSI",
-        "Security": "Life Storage",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Specialized REITs",
-        "Headquarters Location": "Williamsville, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "LSTR",
-        "Security": "Landstar System",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Trucking",
-        "Headquarters Location": "Jacksonville, Florida",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "M",
-        "Security": "Macy's",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Department Stores",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MAC",
-        "Security": "Macerich",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Retail REITs",
-        "Headquarters Location": "Santa Monica, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MAN",
-        "Security": "ManpowerGroup",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Human Resource & Employment Services",
-        "Headquarters Location": "Milwaukee, Wisconsin",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MANH",
-        "Security": "Manhattan Associates",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Application Software",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MASI",
-        "Security": "Masimo",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Equipment",
-        "Headquarters Location": "Irvine, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MAT",
-        "Security": "Mattel",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Leisure Products",
-        "Headquarters Location": "El Segundo, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MDU",
-        "Security": "MDU Resources",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Construction & Engineering",
-        "Headquarters Location": "Bismarck, North Dakota",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "EXC",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "FANG",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "FAST",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "FTNT",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "GFS",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "GILD",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "GOGL",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "GOOG",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "HON",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "IDXX",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "ILMN",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "INTC",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "INTU",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "ISRG",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "JD",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "KAR",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "KDP",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "KLAC",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "LRCX",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "LULU",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "MAR",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "MCHP",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "MDLZ",
+        "stock_type": "large"
+      },
+      {
         "symbol": "MEDP",
-        "Security": "Medpace",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Biotechnology",
-        "Headquarters Location": "Cincinnati, Ohio",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MIDD",
-        "Security": "Middleby",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Industrial Machinery",
-        "Headquarters Location": "Elgin, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MKSI",
-        "Security": "MKS Instruments",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Semiconductor Equipment",
-        "Headquarters Location": "Andover, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MMS",
-        "Security": "Maximus Inc.",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Data Processing & Outsourced Services",
-        "Headquarters Location": "Tysons, Virginia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MODG",
-        "Security": "Topgolf Callaway Brands",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Leisure Products",
-        "Headquarters Location": "Carlsbad, California",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "MELI",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "META",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "MNST",
+        "stock_type": "large"
+      },
+      {
         "symbol": "MP",
-        "Security": "MP Materials",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Diversified Metals & Mining",
-        "Headquarters Location": "Las Vegas, Nevada",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MPW",
-        "Security": "Medical Properties Trust",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Health Care REITs",
-        "Headquarters Location": "Birmingham, Alabama",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "MRCY",
-        "Security": "Mercury Systems",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Electrical Components & Equipment",
-        "Headquarters Location": "Andover, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MSA",
-        "Security": "MSA Safety",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Office Services & Supplies",
-        "Headquarters Location": "Cranberry Township, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MSM",
-        "Security": "MSC Industrial Direct",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Trading Companies & Distributors",
-        "Headquarters Location": "Melville, New York Davidson, North Carolina",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MTDR",
-        "Security": "Matador Resources",
-        "GICS Sector": "Energy",
-        "GICS Sub-Industry": "Oil & Gas Exploration & Production",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MTG",
-        "Security": "MGIC Investment Corporation",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Reinsurance",
-        "Headquarters Location": "Milwaukee, Wisconsin",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MTSI",
-        "Security": "MACOM Technology Solutions",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Semiconductors",
-        "Headquarters Location": "Lowell, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MTZ",
-        "Security": "MasTec",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Construction & Engineering",
-        "Headquarters Location": "Coral Gables, Florida",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "MRVL",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "MSFT",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "MU",
+        "stock_type": "large"
+      },
+      {
         "symbol": "MUR",
-        "Security": "Murphy Oil",
-        "GICS Sector": "Energy",
-        "GICS Sub-Industry": "Oil & Gas Exploration & Production",
-        "Headquarters Location": "Houston, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "MUSA",
-        "Security": "Murphy USA",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Automotive Retail",
-        "Headquarters Location": "El Dorado, Arkansas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NARI",
-        "Security": "Inari Medical",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Equipment",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NATI",
-        "Security": "National Instruments",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Electronic Equipment & Instruments",
-        "Headquarters Location": "Austin, Texas",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "NAVI",
-        "Security": "Navient",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Consumer Finance",
-        "Headquarters Location": "Wilmington, Delaware",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "NBIX",
-        "Security": "Neurocrine Biosciences",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Biotechnology",
-        "Headquarters Location": "San Diego, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NCR",
-        "Security": "NCR",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "IT Consulting & Other Services",
-        "Headquarters Location": "Atlanta, Georgia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NEOG",
-        "Security": "Neogen",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Supplies",
-        "Headquarters Location": "Lansing, Michigan",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NEU",
-        "Security": "NewMarket Corporation",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Specialty Chemicals",
-        "Headquarters Location": "Richmond, Virginia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NFG",
-        "Security": "National Fuel Gas",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Gas Utilities",
-        "Headquarters Location": "Williamsville, New York",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "NGVT",
-        "Security": "Ingevity",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Specialty Chemicals",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NJR",
-        "Security": "New Jersey Resources",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Gas Utilities",
-        "Headquarters Location": "Wall Township, New Jersey",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NLY",
-        "Security": "Annaly Capital Management",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Mortgage REITs",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NNN",
-        "Security": "National Retail Properties",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Retail REITs",
-        "Headquarters Location": "Orlando, Florida",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NOV",
-        "Security": "Nov",
-        "GICS Sector": "Energy",
-        "GICS Sub-Industry": "Oil & Gas Equipment & Services",
-        "Headquarters Location": "Houston, Texas",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "NKE",
+        "stock_type": "large"
+      },
+      {
         "symbol": "NOVT",
-        "Security": "Novanta",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Electronic Equipment & Instruments",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "NSA",
-        "Security": "National Storage Affiliates Trust",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Specialized REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NSP",
-        "Security": "Insperity",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Human Resource & Employment Services",
-        "Headquarters Location": "Houston, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NVST",
-        "Security": "Envista Holdings",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Supplies",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NVT",
-        "Security": "nVent Electric plc",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Electrical Components & Equipment",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NWE",
-        "Security": "NorthWestern Corporation",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Multi-Utilities",
-        "Headquarters Location": "Sioux Falls, South Dakota",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NXST",
-        "Security": "Nexstar Media Group",
-        "GICS Sector": "Communication Services",
-        "GICS Sub-Industry": "Movies & Entertainment",
-        "Headquarters Location": "Irving, Texas",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "NVDA",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "NXPI",
+        "stock_type": "large"
+      },
+      {
         "symbol": "NYCB",
-        "Security": "New York Community Bank",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Thrifts & Mortgage Finance",
-        "Headquarters Location": "Hicksville, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "NYT",
-        "Security": "New York Times Company",
-        "GICS Sector": "Communication Services",
-        "GICS Sub-Industry": "Publishing",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "OC",
-        "Security": "Owens Corning",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Building Products",
-        "Headquarters Location": "Toledo, Ohio",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "ODFL",
+        "stock_type": "large"
+      },
+      {
         "symbol": "OFC",
-        "Security": "Corporate Office Properties Trust",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Office REITs",
-        "Headquarters Location": "Columbia, Maryland",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "OGE",
-        "Security": "OGE Energy",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Multi-Utilities",
-        "Headquarters Location": "Oklahoma City, Oklahoma",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "OGS",
-        "Security": "ONE Gas",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Gas Utilities",
-        "Headquarters Location": "Tulsa, Oklahoma",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "OHI",
-        "Security": "Omega Healthcare Investors",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Specialized REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "OLED",
-        "Security": "Universal Display",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Semiconductors",
-        "Headquarters Location": "Ewing, NJ",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "OLLI",
-        "Security": "Ollie's Bargain Outlet",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "General Merchandise Stores",
-        "Headquarters Location": "Harrisburg, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "OLN",
-        "Security": "Olin",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Diversified Chemicals",
-        "Headquarters Location": "Clayton, Missouri",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
         "symbol": "OMCL",
-        "Security": "Omnicell",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Technology",
-        "Headquarters Location": "Mountain View, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ONB",
-        "Security": "Old National",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Chicago, Illinois Evansville, Indiana",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "OPCH",
-        "Security": "Option Care Health",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Facilities",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ORA",
-        "Security": "Ormat Technologies",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Renewable Electricity",
-        "Headquarters Location": "Reno, Nevada",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ORI",
-        "Security": "Old Republic International",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Property & Casualty Insurance",
-        "Headquarters Location": "Chicago, Illinois",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "OPEN",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "ORLY",
+        "stock_type": "large"
+      },
+      {
         "symbol": "OSK",
-        "Security": "Oshkosh",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Construction Machinery & Heavy Trucks",
-        "Headquarters Location": "Oshkosh, Wisconsin",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "OZK",
-        "Security": "Bank OZK",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Little Rock, Arkansas",
-        "SEC filings": "reports"
-    },
-    {
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "OTLY",
+        "stock_type": "small"
+      },
+      {
         "symbol": "PACW",
-        "Security": "PacWest Bancorp",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Beverly Hills, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PB",
-        "Security": "Prosperity Bancshares",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Houston, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PBF",
-        "Security": "PBF Energy",
-        "GICS Sector": "Energy",
-        "GICS Sub-Industry": "Oil & Gas Refining & Marketing",
-        "Headquarters Location": "Parsippany, New Jersey",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PCH",
-        "Security": "PotlatchDeltic",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Specialized REITs",
-        "Headquarters Location": "Spokane, Washington",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PCTY",
-        "Security": "Paylocity",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Application Software",
-        "Headquarters Location": "Schaumburg, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PDCE",
-        "Security": "PDC Energy",
-        "GICS Sector": "Energy",
-        "GICS Sub-Industry": "Oil & Gas Exploration & Production",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PDCO",
-        "Security": "Patterson Companies",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Distributors",
-        "Headquarters Location": "Mendota Heights, Minnesota",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PEB",
-        "Security": "Pebblebrook Hotel Trust",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Hotel & Resort REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PEN",
-        "Security": "Penumbra",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Equipment",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PENN",
-        "Security": "Penn Entertainment",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Casinos & Gaming",
-        "Headquarters Location": "Wyomissing, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PFGC",
-        "Security": "Performance Food Group",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Food Distributors",
-        "Headquarters Location": "Richmond, Virginia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PGNY",
-        "Security": "Progyny",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Services",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PII",
-        "Security": "Polaris",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Leisure Products",
-        "Headquarters Location": "Medina, Minnesota",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PK",
-        "Security": "Park Hotels & Resorts",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Hotel & Resort REITs",
-        "Headquarters Location": "Tysons, Virginia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PNFP",
-        "Security": "Pinnacle Financial Partners",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Nashville, Tennessee",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PNM",
-        "Security": "PNM Resources",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Electric Utilities",
-        "Headquarters Location": "Albuquerque, New Mexico",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "POR",
-        "Security": "Portland General Electric",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Electric Utilities",
-        "Headquarters Location": "Portland, Oregon",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "POST",
-        "Security": "Post Holdings",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Packaged Foods & Meats",
-        "Headquarters Location": "St Louis, Missouri",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "POWI",
-        "Security": "Power Integrations",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Semiconductors",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PPC",
-        "Security": "Pilgrim's Pride",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Packaged Foods & Meats",
-        "Headquarters Location": "Greeley, Colorado",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PRGO",
-        "Security": "Perrigo",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Pharmaceuticals",
-        "Headquarters Location": "Grand Rapids, Michigan",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PRI",
-        "Security": "Primerica",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Life & Health Insurance",
-        "Headquarters Location": "Duluth, Georgia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PVH",
-        "Security": "PVH",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Apparel, Accessories & Luxury Goods",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "PZZA",
-        "Security": "Papa John's Pizza",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Restaurants",
-        "Headquarters Location": "Jeffersontown, Kentucky",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "QDEL",
-        "Security": "QuidelOrtho",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Supplies",
-        "Headquarters Location": "San Diego, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "QLYS",
-        "Security": "Qualys",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Systems Software",
-        "Headquarters Location": "Foster City, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "R",
-        "Security": "Ryder",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Trucking",
-        "Headquarters Location": "Miami, Florida",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "RCM",
-        "Security": "R1 RCM",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Services",
-        "Headquarters Location": "Murray, Utah",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "REXR",
-        "Security": "Rexford Industrial Realty",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Industrial REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "RGA",
-        "Security": "Reinsurance Group of America",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Reinsurance",
-        "Headquarters Location": "Chesterfield, Missouri",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "RGEN",
-        "Security": "Repligen",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Biotechnology",
-        "Headquarters Location": "Waltham, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "RGLD",
-        "Security": "Royal Gold",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Precious Metals & Minerals",
-        "Headquarters Location": "Denver, Colorado",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "RH",
-        "Security": "RH",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Homefurnishing Retail",
-        "Headquarters Location": "Corte Madera, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "RLI",
-        "Security": "RLI",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Property & Casualty Insurance",
-        "Headquarters Location": "Peoria, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "RNR",
-        "Security": "RenaissanceRe",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Reinsurance",
-        "Headquarters Location": "Bermuda",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "RPM",
-        "Security": "RPM International",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Specialty Chemicals",
-        "Headquarters Location": "Medina, Ohio",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "RRC",
-        "Security": "Range Resources",
-        "GICS Sector": "Energy",
-        "GICS Sub-Industry": "Oil & Gas Exploration & Production",
-        "Headquarters Location": "Fort Worth, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "RRX",
-        "Security": "Regal Rexnord",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Electrical Components & Equipment",
-        "Headquarters Location": "Beloit, Wisconsin",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "RS",
-        "Security": "Reliance Steel & Aluminum Co.",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Steel",
-        "Headquarters Location": "Scottsdale, Arizona",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "RUN",
-        "Security": "Sunrun",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Building Products",
-        "Headquarters Location": "San Francisco, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "RYN",
-        "Security": "Rayonier",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Specialized REITs",
-        "Headquarters Location": "Wildlight, Florida",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SAIA",
-        "Security": "Saia",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Trucking",
-        "Headquarters Location": "Johns Creek, Georgia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SAIC",
-        "Security": "Science Applications Intl Corp",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Diversified Support Services",
-        "Headquarters Location": "Reston, Virginia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SAM",
-        "Security": "Boston Beer Company",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Brewers",
-        "Headquarters Location": "Boston, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SBRA",
-        "Security": "Sabra Health Care REIT",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Health Care REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SCI",
-        "Security": "Service Corp Intl",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Specialized Consumer Services",
-        "Headquarters Location": "Houston, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SEIC",
-        "Security": "SEI",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Asset Management & Custody Banks",
-        "Headquarters Location": "Oaks, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SF",
-        "Security": "Stifel",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Investment Banking & Brokerage",
-        "Headquarters Location": "St. Louis, Missouri",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SFM",
-        "Security": "Sprouts Farmers Market",
-        "GICS Sector": "Consumer Staples",
-        "GICS Sub-Industry": "Food Retail",
-        "Headquarters Location": "Phoenix, Arizona",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SHC",
-        "Security": "Sotera Health",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Services",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SIGI",
-        "Security": "Selective Insurance Group",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Property & Casualty Insurance",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SITM",
-        "Security": "SiTime",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Semiconductors",
-        "Headquarters Location": "Santa Clara, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SKX",
-        "Security": "Skechers",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Footwear",
-        "Headquarters Location": "Manhattan Beach, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SLAB",
-        "Security": "Silicon Labs",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Semiconductors",
-        "Headquarters Location": "Austin, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SLG",
-        "Security": "SL Green Realty",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Office REITs",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SLGN",
-        "Security": "Silgan Holdings",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Metal & Glass Containers",
-        "Headquarters Location": "Stamford, Connecticut",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SLM",
-        "Security": "SLM Corp",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Consumer Finance",
-        "Headquarters Location": "Newark, Delaware",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SMCI",
-        "Security": "Supermicro",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Technology Hardware, Storage & Peripherals",
-        "Headquarters Location": "San Jose, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SMG",
-        "Security": "Scotts Miracle-Gro Company",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Fertilizers & Agricultural Chemicals",
-        "Headquarters Location": "Marysville, Ohio",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SNV",
-        "Security": "Synovus",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Columbus, Georgia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SNX",
-        "Security": "TD Synnex",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Technology Distributors",
-        "Headquarters Location": "Fremont, California Clearwater, Florida",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SON",
-        "Security": "Sonoco",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Paper Packaging",
-        "Headquarters Location": "Hartsville, South Carolina",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SPWR",
-        "Security": "SunPower",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Electrical Components & Equipment",
-        "Headquarters Location": "San Jose, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SR",
-        "Security": "Spire",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Gas Utilities",
-        "Headquarters Location": "St. Louis, Missouri",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SRC",
-        "Security": "Spirit Realty Capital",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Retail REITs",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SRCL",
-        "Security": "Stericycle",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Environmental & Facilities Services",
-        "Headquarters Location": "Bannockburn, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SSD",
-        "Security": "Simpson Manufacturing",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Building Products",
-        "Headquarters Location": "Pleasanton, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "STAA",
-        "Security": "STAAR Surgical",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Equipment",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SWAV",
-        "Security": "Shockwave Medical",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Equipment",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SWN",
-        "Security": "Southwestern Energy",
-        "GICS Sector": "Energy",
-        "GICS Sub-Industry": "Oil & Gas Exploration & Production",
-        "Headquarters Location": "Spring, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SWX",
-        "Security": "Southwest Gas Corp",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Gas Utilities",
-        "Headquarters Location": "Las Vegas, Nevada",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SXT",
-        "Security": "Sensient Technologies",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Specialty Chemicals",
-        "Headquarters Location": "Milwaukee, Wisconsin",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SYNA",
-        "Security": "Synaptics",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Semiconductors",
-        "Headquarters Location": "San Jose, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "SYNH",
-        "Security": "Syneos Health",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Life Sciences Tools & Services",
-        "Headquarters Location": "Morrisville, North Carolina",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TCBI",
-        "Security": "Texas Capital Bancshares",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Dallas, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TDC",
-        "Security": "Teradata",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "IT Consulting & Other Services",
-        "Headquarters Location": "San Diego, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TEX",
-        "Security": "Terex",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Construction Machinery & Heavy Trucks",
-        "Headquarters Location": "Norwalk, Connecticut",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TGNA",
-        "Security": "Tegna",
-        "GICS Sector": "Communication Services",
-        "GICS Sub-Industry": "Broadcasting",
-        "Headquarters Location": "Tysons, Virginia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "THC",
-        "Security": "Tenet Health",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Facilities",
-        "Headquarters Location": "Dallas, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "THG",
-        "Security": "Hanover Insurance",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Property & Casualty Insurance",
-        "Headquarters Location": "Worcester, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "THO",
-        "Security": "Thor Industries",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Leisure Products",
-        "Headquarters Location": "Elkhart, Indiana",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TKR",
-        "Security": "Timken",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Industrial Machinery",
-        "Headquarters Location": "North Canton, Ohio",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TMHC",
-        "Security": "Taylor Morrison",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Homebuilding",
-        "Headquarters Location": "Scottsdale, Arizona",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TNDM",
-        "Security": "Tandem Diabetes Care",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Health Care Equipment",
-        "Headquarters Location": "San Diego, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TNL",
-        "Security": "Travel + Leisure Co.",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Hotels, Resorts & Cruise Lines",
-        "Headquarters Location": "Orlando, Florida",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TOL",
-        "Security": "Toll Brothers",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Homebuilding",
-        "Headquarters Location": "Fort Washington, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TPX",
-        "Security": "Tempur Sealy",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Home Furnishings",
-        "Headquarters Location": "Lexington, Kentucky",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TREX",
-        "Security": "Trex",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Building Products",
-        "Headquarters Location": "Winchester, Virginia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TRIP",
-        "Security": "TripAdvisor",
-        "GICS Sector": "Communication Services",
-        "GICS Sub-Industry": "Interactive Media & Services",
-        "Headquarters Location": "Needham, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TTC",
-        "Security": "Toro",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Agricultural & Farm Machinery",
-        "Headquarters Location": "Bloomington, Minnesota",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TTEK",
-        "Security": "Tetra Tech",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Environmental & Facilities Services",
-        "Headquarters Location": "Pasadena, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "TXRH",
-        "Security": "Texas Roadhouse",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Restaurants",
-        "Headquarters Location": "Louisville, Kentucky",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "UA",
-        "Security": "Under Armour (Class C)",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Apparel, Accessories & Luxury Goods",
-        "Headquarters Location": "Baltimore, Maryland",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "UAA",
-        "Security": "Under Armour (Class A)",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Apparel, Accessories & Luxury Goods",
-        "Headquarters Location": "Baltimore, Maryland",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "UBSI",
-        "Security": "United Bankshares",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Charleston, West Virginia",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "UGI",
-        "Security": "UGI Corp",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Gas Utilities",
-        "Headquarters Location": "King of Prussia, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "UMBF",
-        "Security": "UMB Financial Corp.",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Kansas City, Missouri",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "UMPQ",
-        "Security": "Umpqua Bank",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Canyonville, Oregon",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "UNM",
-        "Security": "Unum",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Life & Health Insurance",
-        "Headquarters Location": "Chattanooga, Tennessee",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "UNVR",
-        "Security": "Univar Solutions",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Trading Companies & Distributors",
-        "Headquarters Location": "Downers Grove, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "UTHR",
-        "Security": "United Therapeutics",
-        "GICS Sector": "Health Care",
-        "GICS Sub-Industry": "Biotechnology",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "VAC",
-        "Security": "Marriott Vacations Worldwide",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Hotels, Resorts & Cruise Lines",
-        "Headquarters Location": "Orlando, Florida",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "VC",
-        "Security": "Visteon",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Auto Parts & Equipment",
-        "Headquarters Location": "Van Buren Township, Michigan",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "VICR",
-        "Security": "Vicor",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Electrical Components & Equipment",
-        "Headquarters Location": "Andover, Massachusetts",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "VLY",
-        "Security": "Valley",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Wayne, New Jersey",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "VMI",
-        "Security": "Valmont",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Industrial Machinery",
-        "Headquarters Location": "Omaha, Nebraska",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "VNO",
-        "Security": "Vornado Realty Trust",
-        "GICS Sector": "Real Estate",
-        "GICS Sub-Industry": "Office REITs",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "VNT",
-        "Security": "Vontier",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Electronic Equipment & Instruments",
-        "Headquarters Location": "Raleigh, North Carolina",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "VOYA",
-        "Security": "Voya Financial",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Multi-Sector Holdings",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "VSAT",
-        "Security": "Viasat",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Communications Equipment",
-        "Headquarters Location": "Carlsbad, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "VSCO",
-        "Security": "Victoria's Secret",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Apparel Retail",
-        "Headquarters Location": "Reynoldsburg, Ohio",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "VSH",
-        "Security": "Vishay",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Electronic Components",
-        "Headquarters Location": "Malvern, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "VVV",
-        "Security": "Valvoline",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Commodity Chemicals",
-        "Headquarters Location": "Lexington, Kentucky",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WAFD",
-        "Security": "Washington Federal",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Thrifts & Mortgage Finance",
-        "Headquarters Location": "Seattle, Washington",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WBS",
-        "Security": "Webster Bank",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Stamford, Connecticut",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WEN",
-        "Security": "Wendy's",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Restaurants",
-        "Headquarters Location": "Dublin, Ohio",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WERN",
-        "Security": "Werner Enterprises",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Trucking",
-        "Headquarters Location": "Omaha, Nebraska",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WEX",
-        "Security": "WEX Inc.",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Data Processing & Outsourced Services",
-        "Headquarters Location": "South Portland, Maine",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WH",
-        "Security": "Wyndham Hotels & Resorts",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Hotels, Resorts & Cruise Lines",
-        "Headquarters Location": "Parsippany, New Jersey",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WING",
-        "Security": "Wingstop",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Restaurants",
-        "Headquarters Location": "Addison, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WLK",
-        "Security": "Westlake",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Specialty Chemicals",
-        "Headquarters Location": "Houston, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WLY",
-        "Security": "John Wiley & Sons",
-        "GICS Sector": "Communication Services",
-        "GICS Sub-Industry": "Publishing",
-        "Headquarters Location": "Hoboken, New Jersey",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WOLF",
-        "Security": "Wolfspeed",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Semiconductors",
-        "Headquarters Location": "Research Triangle Park, North Carolina",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WOR",
-        "Security": "Worthington Industries",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Steel",
-        "Headquarters Location": "Columbus, Ohio",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WSM",
-        "Security": "Williams-Sonoma",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Homefurnishing Retail",
-        "Headquarters Location": "San Francisco, California",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WSO",
-        "Security": "Watsco",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Trading Companies & Distributors",
-        "Headquarters Location": "Miami, Florida",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WTFC",
-        "Security": "Wintrust",
-        "GICS Sector": "Financials",
-        "GICS Sub-Industry": "Regional Banks",
-        "Headquarters Location": "Rosemont, Illinois",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WTRG",
-        "Security": "Essential Utilities",
-        "GICS Sector": "Utilities",
-        "GICS Sub-Industry": "Water Utilities",
-        "Headquarters Location": "Bryn Mawr, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WTS",
-        "Security": "Watts Water Technologies",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Building Products",
-        "Headquarters Location": "",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WU",
-        "Security": "Western Union",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Data Processing & Outsourced Services",
-        "Headquarters Location": "Denver, Colorado",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WWD",
-        "Security": "Woodward",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Electrical Components & Equipment",
-        "Headquarters Location": "Fort Collins, Colorado",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "WWE",
-        "Security": "World Wrestling Entertainment",
-        "GICS Sector": "Communication Services",
-        "GICS Sub-Industry": "Movies & Entertainment",
-        "Headquarters Location": "Stamford, Connecticut",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "X",
-        "Security": "U.S. Steel",
-        "GICS Sector": "Materials",
-        "GICS Sub-Industry": "Steel",
-        "Headquarters Location": "Pittsburgh, Pennsylvania",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "XPO",
-        "Security": "XPO Logistics",
-        "GICS Sector": "Industrials",
-        "GICS Sub-Industry": "Trucking",
-        "Headquarters Location": "Greenwich, Connecticut",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "XRX",
-        "Security": "Xerox",
-        "GICS Sector": "Information Technology",
-        "GICS Sub-Industry": "Technology Hardware, Storage & Peripherals",
-        "Headquarters Location": "Norwalk, Connecticut",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "YETI",
-        "Security": "Yeti",
-        "GICS Sector": "Consumer Discretionary",
-        "GICS Sub-Industry": "Leisure Products",
-        "Headquarters Location": "Austin, Texas",
-        "SEC filings": "reports"
-    },
-    {
-        "symbol": "ZD",
-        "Security": "Ziff Davis",
-        "GICS Sector": "Communication Services",
-        "GICS Sub-Industry": "Advertising",
-        "Headquarters Location": "New York City, New York",
-        "SEC filings": "reports"
-    }
-]
+        "stock_type": "mid"
+      },
+      {
+        "symbol": "PANW",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "PAYX",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "PDD",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "PEP",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "PSFE",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "PYPL",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "QCOM",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "QUOT",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "RAD",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "REGN",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "RGS",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "RIVN",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "ROST",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "RXT",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "SAND",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "SBUX",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "SDC",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "SGEN",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "SIRI",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "SKLZ",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "TEAM",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "TLRY",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "TMUS",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "UP",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "VMEO",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "VRM",
+        "stock_type": "small"
+      },
+      {
+        "symbol": "VRSK",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "VRTX",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "WBA",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "WBD",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "WDAY",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "XEL",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "ZM",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "ZS",
+        "stock_type": "large"
+      },
+      {
+        "symbol": "ZUO",
+        "stock_type": "small"
+      }
+    ]
+  }
