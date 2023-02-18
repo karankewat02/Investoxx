@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { UserProvider } from './provider/Auth'
+import { Route, Routes } from 'react-router-dom'
+import Home from './screens/Home/Home'
+import Login from './screens/Auth/Login'
+import Dashboard from './screens/Dashboard/Dashboard'
 
-function App() {
+import { Toaster } from 'react-hot-toast'
+import NotFound from './screens/NotFound/NotFound'
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <UserProvider>
 
-export default App;
+      <Toaster/>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard/*" element={<Dashboard />} />
+          
+          
+          <Route path="*" element={<NotFound/>} />
+      </Routes>
+    </UserProvider>
+  )
+}
