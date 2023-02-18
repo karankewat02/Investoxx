@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import 'cors'
 import React, { useEffect, useState } from "react";
-import { Link, Route, Routes } from 'react-router-dom'
+import { Link, Route, Routes, useNavigate } from 'react-router-dom'
 import { UserContext } from "../../provider/Auth";
 import Graph from "../../components/Graph/Graph";
 import Sidebar from "../../components/Sidebar/Sidebar";
@@ -15,6 +15,8 @@ import axios from "axios";
 import Loading from "../Loading/Loading";
 import AddComponent from "../../components/AddComponent/AddComponent";
 import NewsAnalyse from "../../components/NewsAnalyse/NewsAnalyse";
+import { toast } from "react-hot-toast";
+import SearchResult from "../../components/SearchResult/SearchResult";
 
 const BASE_URL = "http://localhost:5000";
 
@@ -91,6 +93,7 @@ export default function Dashboard() {
           <Route path="portfolio" element={<Portfolio/>} />
           <Route path="watchlist" element={<Watchlist />} />
           <Route path="news-analyse" element={<NewsAnalyse />} />
+          <Route path="search-result/:symbol" element={<SearchResult />} />
         </Routes>
       </div>
     ):
@@ -110,6 +113,18 @@ function Content({ onSidebarHide }) {
     month: "long",
     day: "numeric",
   });
+
+  const navigate = useNavigate();
+
+  const [search , setSearch] = useState("");
+
+  const satistfactionData = "Rehovot, Israel, Feb.  17, 2023  (GLOBE NEWSWIRE) --  G Medical Innovations Holdings Ltd. (Nasdaq: GMVD) (the “Company”) announced today that on February 16, 2023, the Company received notice from the Listing Qualifications Department (the “Staff”) of The Nasdaq Stock Market LLC (“Nasdaq”) that, based upon the Company’s non-compliance with the stockholders’ equity requirement for continued listing on The Nasdaq Capital Market, as set forth in Nasdaq Listing Rule 5550(b) (the “Equity Rule”), the Company is subject to delisting from Nasdaq unless the Company timely requests a hearing before a Nasdaq Hearings Panel (the “Panel”).  Accordingly, the Company plans to timely request a hearing before the Panel, which will stay any delisting or suspension action pending the hearing and the expiration of any additional extension period granted by the Panel following the hearing."
+
+  const handelSearch = (e) => {
+    e.preventDefault();
+    navigate(`/dashboard/search-result/${search}`, {state: {symbol: search}})
+  }
+
   return (
     <div className="flex w-full">
       <div className="w-full h-screen hidden sm:block sm:w-20 xl:w-60 flex-shrink-0"></div>
@@ -140,13 +155,15 @@ function Content({ onSidebarHide }) {
               path="res-react-dash-search"
               className="w-5 h-5 search-icon left-3 absolute"
             />
-            <form action="#" method="POST">
+            <form onSubmit={handelSearch} >
               <input
                 type="text"
                 name="company_website"
                 id="company_website"
                 className="pl-12 py-2 pr-2 block w-full rounded-lg border-gray-300 bg-card"
-                placeholder="search"
+                placeholder="search symbol"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
               />
             </form>
           </div>
@@ -178,7 +195,7 @@ function Content({ onSidebarHide }) {
 
         <div className="w-full p-2 lg:w-2/3">
           <div className="rounded-lg bg-card sm:h-80 h-60">
-            <Graph  symbol="^NDX" />
+            <Graph  symbol="^NDX" name="NASDAQ 100 Summary" />
           </div>
         </div>
         <div className="w-full p-2 lg:w-1/3">
@@ -194,7 +211,7 @@ function Content({ onSidebarHide }) {
         </div>
         <div className="w-full p-2 lg:w-1/3">
           <div className="rounded-lg bg-card h-80">
-            <Satisfication />
+            <Satisfication description={satistfactionData} />
           </div>
         </div>
         <div className="w-full p-2 lg:w-1/3">
@@ -228,9 +245,11 @@ function TopCountries() {
   useEffect(() => {
     top_stock_data()
   }, [])
+  
+  const navigate = useNavigate()
 
   const handelSymbolSearch = (symbol) => {
-    console.log(symbol)
+    navigate(`/dashboard/search-result/${symbol}`, {state: {symbol: symbol}})
   }
 
   return (
@@ -247,9 +266,9 @@ function TopCountries() {
           <div className="">&nbsp;</div>
           <div className="ml-2">Symbol</div>
           <div className="flex-grow" />
-          <div className="">Predicted($)</div>
+          <div className="">Current</div>
           <div className="flex-grow" />
-          <div className="">Current($)</div>
+          <div className="">Predicted(next month)</div>
 
         </div>
       {data.map((i,index) => (
@@ -259,9 +278,9 @@ function TopCountries() {
           &nbsp;
           <Icon path="res-react-dash-tick" />
           <div className="flex-grow" />
-          <div className="">{`$${i.predicted_performance}`}</div>
-          <div className="flex-grow" />
           <div className="">{`$${i.last_known_price}`}</div>
+          <div className="flex-grow" />
+          <div className="">{`$${i.predicted_performance}`}</div>
           <Icon
             path={
               ((i.predicted_performance-i.last_known_price)>0) ? "res-react-dash-country-up" : "res-react-dash-country-down"

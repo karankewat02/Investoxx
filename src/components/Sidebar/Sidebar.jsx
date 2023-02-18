@@ -90,7 +90,7 @@ export default function Sidebar({ onSidebarHide, showSidebar }) {
                 link={i.link}
               />
             ))}
-            <div className="mt-8 mb-0 font-bold px-3 block sm:hidden xl:block">
+            {/* <div className="mt-8 mb-0 font-bold px-3 block sm:hidden xl:block">
               SHORTCUTS
             </div>
             {sidebarItems[1].map((i) => (
@@ -100,7 +100,7 @@ export default function Sidebar({ onSidebarHide, showSidebar }) {
                 onClick={setSelected}
                 selected={selected}
               />
-            ))}
+            ))} */}
             <div className="flex-grow" />
           </div>
 
@@ -108,7 +108,7 @@ export default function Sidebar({ onSidebarHide, showSidebar }) {
             <div className="flex items-center h-full sm:justify-center xl:justify-start p-2 sidebar-separator-bottom">
               <Image path="mock_faces_8" className="w-10 h-10" />
               <div className="block sm:hidden xl:block ml-2 font-bold ">
-                {user?.loginStatus ? user.user.name : "Login!"}
+                {user?.loginStatus ? user.user.name : "Login!"} <span style={{color:"green"}}>•</span>
               </div>
               <div className="flex-grow block sm:hidden xl:block" />
               {/* Icon for logout */}

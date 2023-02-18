@@ -119,7 +119,7 @@ export default function Graph(props) {
       <div className="flex p-4 h-full flex-col">
         <div className="">
           <div className="flex items-center">
-            <div className="font-bold text-white">NASDAQ 100 Summary</div>
+            <div className="font-bold text-white">{props.name}</div>
             <div className="flex-grow" />
   
             <Icon path="res-react-dash-graph-range" className="w-4 h-4" />
@@ -151,12 +151,12 @@ export default function Graph(props) {
                 tickLine={false}
                 tickMargin={10}
               />
-              <YAxis axisLine={false} tickLine={false} tickMargin={10} />
+              <YAxis axisLine={false} tickLine={false} tickMargin={10} interval='preserveStartEnd' />
               <Tooltip content={<CustomTooltip />} cursor={false} />
               <Line
                 activeDot={false}
                 type="monotone"
-                dataKey="revenue"revenue
+                dataKey="revenue"
                 stroke="#242424"
                 strokeWidth="3"
                 dot={false}

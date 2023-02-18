@@ -10,7 +10,7 @@ export default function News() {
   const [news, setNews] = React.useState([]);  
 
   const get_news = async () => {
-    const newsAPI = "https://api.polygon.io/v2/reference/news?apiKey=_UQ5h1LONGUswPwxAjNXISHMSwRoWAtH";
+    const newsAPI = "https://api.polygon.io/v2/reference/news?limit=12&apiKey=_UQ5h1LONGUswPwxAjNXISHMSwRoWAtH";
     await axios.get(newsAPI).then((res) => {
       setNews(res.data.results);
       setLoading(false);

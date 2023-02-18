@@ -1,5 +1,8 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+import { toast } from 'react-hot-toast';
 import { useSpring, animated, config } from "react-spring";
+import Loading from '../../screens/Loading/Loading';
 import Icon from "../Icon/Icon";
 
 const map = (value, sMin, sMax, dMin, dMax) => {
@@ -8,19 +11,46 @@ const map = (value, sMin, sMax, dMin, dMax) => {
 const pi = Math.PI;
 const tau = 2 * pi;
 
-export default function Satisfication() {
+export default function Satisfication({ description }) {
+  const [data, setData] = useState({});
+  const [loading, setLoading] = useState(true);
+
+
+  const get_sentiment = async () => {
+    await axios.post("http://localhost:5000/sentiment",{
+      "news": description
+    }).then((res) => {
+      var sentiment = res.data.sentiment.compound
+      sentiment = sentiment * 100
+      sentiment = sentiment.toFixed(2)
+      setData(sentiment)
+      setLoading(false)
+    })
+    .catch((err) => {
+      toast.error("Something went wrong")
+      console.log(err)
+    })
+  }
+
+  useEffect(() => {
+    get_sentiment()
+  }, [])
+
+
     const { dashOffset } = useSpring({
       dashOffset: 78.54,
       from: { dashOffset: 785.4 },
       config: config.molasses,
     });
     return (
+      <>
+        {loading ? <Loading/> :
       <div className="p-4 h-full">
         <div className="flex justify-between items-center">
-          <div className="text-white font-bold">Satisfication</div>
+          <div className="text-white font-bold">Sentiment Analysis</div>
           <Icon path="res-react-dash-options" className="w-2 h-2" />
         </div>
-        <div className="mt-3">From all projects</div>
+        <div className="mt-3">From The News</div>
         <div className="flex justify-center">
           <svg
             viewBox="0 0 700 380"
@@ -197,9 +227,9 @@ export default function Satisfication() {
                 className="font-bold"
                 style={{ color: '#2f49d1', fontSize: '18px' }}
               >
-                97.78%
+                {data}%
               </div>
-              <div className="">Based on Likes</div>
+              <div className="">Based on Market </div>
             </div>
             <div className="" style={{ width: '50px' }}>
               100%
@@ -207,6 +237,7 @@ export default function Satisfication() {
           </div>
         </div>
       </div>
-    );
-  }
+    }
+  </>
+)}
   
