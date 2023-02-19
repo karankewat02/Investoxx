@@ -87,6 +87,12 @@ def predict_stock_performance(symbol):
 # * -----------------------------------------------------------------------------------------------------------------------------------------
 
 @csrf_exempt
+
+def index(request):
+    return HttpResponse("Hello, world. You're at the investoxxAPI index.")
+
+
+@csrf_exempt
 def get_data(request):
 
     if request.method == 'POST':

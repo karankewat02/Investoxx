@@ -19,6 +19,7 @@ from investoxxAPI import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index, name='index'),
     path('get_prediction/', views.get_data, name='get_data'),
     path('get_news_analysis/', views.analyze_news, name='analyze_news'),
 ]
