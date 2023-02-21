@@ -16,11 +16,13 @@ function App() {
     <div className='App'
       style={{background: darkMode? 'black': '', color: darkMode? 'white': '' }}
     >
+      <h1>hi</h1>
       <NavBar/>
       <Intro/>
       <Services/>
       <Results/>
       <Footer/>
+
     </div>
   );
 }
