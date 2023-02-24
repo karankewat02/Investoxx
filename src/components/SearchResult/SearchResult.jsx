@@ -16,6 +16,8 @@ export default function SearchResult() {
   const location = useLocation();
   const receivedData = location.state.symbol;
   const {user , updateUser} = React.useContext(UserContext)
+  const [mounted, setMounted] = useState(false);
+  // const [dataMounted, setDataMounted] = useState(false);
 
   const update_performance = async () => {
     setLoading(true);
@@ -25,6 +27,7 @@ export default function SearchResult() {
       })
       .then((res) => {
         toast.success("Performance Updated");
+        setMounted(true)
         setLoading(false);
       })
       .catch((err) => {
@@ -50,7 +53,10 @@ export default function SearchResult() {
         });
         const formattedDate = formatter.format(timestamp);
         setDate(formattedDate);
-        update_performance();
+        if(!mounted){
+          setMounted(true)
+          update_performance();
+        }
 
         // setDate(res.data.result[0].analysis_date);
         setLoading(false);
@@ -64,8 +70,11 @@ export default function SearchResult() {
   };
 
   React.useEffect(() => {
-    get_data();
-  }, []);
+    if(!mounted){
+      setMounted(true)
+      get_data();
+    }
+  }, [mounted]);
 
   const handelAddToPortfolio = async () => {
     setLoading(true);
@@ -198,7 +207,7 @@ export default function SearchResult() {
 
             <div className="w-full p-2 lg:w-1/3">
               <div className="rounded-lg bg-card overflow-hidden h-80">
-                <NewsComponent />
+                <NewsComponent symbol={receivedData} />
               </div>
             </div>
           </div>
@@ -353,7 +362,14 @@ function DetailComponent({ data, date }) {
   );
 }
 
-function NewsComponent() {
+function NewsComponent({ symbol }) {
+
+  const navigate = useNavigate();
+
+  const handelGetNews = () => {
+    navigate("/dashboard/news" , {state : {API : `https://api.polygon.io/v2/reference/news?ticker=${symbol}&apiKey=_UQ5h1LONGUswPwxAjNXISHMSwRoWAtH`}});
+  };
+
   return (
     <div>
       <div className="w-full h-20 add-component-head" />
@@ -379,8 +395,8 @@ function NewsComponent() {
           />
         </div>
         <div className="text-white font-bold mt-3">Search for stock news</div>
-        <div className="mt-2">Simply get the news of searched stock</div>
-        <div className="mt-1">Just click on the button</div>
+        <div className="mt-2">Get the news related to this stock</div>
+        <div className="mt-1">Just click on the button to search</div>
         <div
           className="flex items-center p-3 mt-3"
           style={{
@@ -392,7 +408,7 @@ function NewsComponent() {
           }}
         >
           {/* <Icon path="res-react-dash-add-component" className="w-5 h-5" /> */}
-          <div className="ml-2">Get News</div>
+          <div style={{ cursor:"pointer" }} onClick={handelGetNews} className="ml-2">Get News</div>
         </div>
       </div>
     </div>

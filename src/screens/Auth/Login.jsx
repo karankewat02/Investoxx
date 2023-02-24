@@ -48,9 +48,12 @@ export default function Login() {
   };
 
   const handelSignup = () => {
-
+    if(name === "" || email === "" || password === ""){
+      toast.error("Please fill all the fields")
+      return
+    }
+    
     setLoading(true)
-
     axios.post(`${BASE_URL}/api/auth/register`,{
       name: name,
       password:password,
@@ -69,7 +72,10 @@ export default function Login() {
   }
 
   const handelLogin = () => {
-
+    if(email === "" || password === ""){
+      toast.error("Please fill all the fields")
+      return
+    }
     setLoading(true)
 
     axios.post(`${BASE_URL}/api/auth/login`,{
@@ -78,6 +84,7 @@ export default function Login() {
     }).then((res)=>{
       var userData = res.data.result[0]
       updateUser({ loginStatus: true, user: userData })
+      localStorage.setItem("user", JSON.stringify({ loginStatus:true,user:userData }));
       toast.success(res.data.message)
       navigate("/dashboard")
       setLoading(false)
@@ -102,9 +109,9 @@ export default function Login() {
             <span>or</span>Sign up
           </h2>
           <div className="form-holder">
-            <input type="text" className="input" placeholder="Name" onChange={(e)=>setName(e.target.value)} />
-            <input type="email" className="input" placeholder="Email" onChange={(e)=>setEmail(e.target.value)} />
-            <input type="password" className="input" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
+            <input required type="text" className="input" placeholder="Name" onChange={(e)=>setName(e.target.value)} />
+            <input required type="email" className="input" placeholder="Email" onChange={(e)=>setEmail(e.target.value)} />
+            <input required type="password" className="input" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
           </div>
           <button  className="submit-btn" onClick={handelSignup}>Sign up</button>
         </div>
@@ -114,8 +121,8 @@ export default function Login() {
               <span>or</span>Log in
             </h2>
             <div className="form-holder">
-              <input type="email" className="input" placeholder="Email" onChange={(e)=>setEmail(e.target.value)} />
-              <input type="password" className="input" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
+              <input required type="email" className="input" placeholder="Email" onChange={(e)=>setEmail(e.target.value)} />
+              <input required type="password" className="input" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
             </div>
             <button className="submit-btn" onClick={handelLogin} >Log in</button>
           </div>
