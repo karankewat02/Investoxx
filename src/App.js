@@ -8,6 +8,8 @@ import Dashboard from './screens/Dashboard/Dashboard'
 import { Toaster } from 'react-hot-toast'
 import NotFound from './screens/NotFound/NotFound'
 
+import './App.css'
+
 export default function App() {
   return (
     <UserProvider>
