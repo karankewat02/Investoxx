@@ -151,7 +151,7 @@ export default function Graph(props) {
                 tickLine={false}
                 tickMargin={10}
               />
-              <YAxis axisLine={false} tickLine={false} tickMargin={10} interval='preserveStartEnd' />
+              <YAxis axisLine={false} tickLine={false} tickMargin={10} interval='preserveStartEnd' type="number" domain={['auto', 'auto']} />
               <Tooltip content={<CustomTooltip />} cursor={false} />
               <Line
                 activeDot={false}

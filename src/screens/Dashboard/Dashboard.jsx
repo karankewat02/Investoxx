@@ -17,6 +17,7 @@ import AddComponent from "../../components/AddComponent/AddComponent";
 import NewsAnalyse from "../../components/NewsAnalyse/NewsAnalyse";
 import { toast } from "react-hot-toast";
 import SearchResult from "../../components/SearchResult/SearchResult";
+import LoginFirst from "../LoginFirst/LoginFirst";
 
 const BASE_URL = "http://localhost:5000";
 
@@ -56,28 +57,40 @@ const employeeData = [
   },
 ];
 
-const Countrydata = [
-  { name: "USA", rise: true, value: 21942.83, id: 1 },
-  { name: "Ireland", rise: false, value: 19710.0, id: 2 },
-  { name: "Ukraine", rise: false, value: 12320.3, id: 3 },
-  { name: "Sweden", rise: true, value: 9725.0, id: 4 },
-];
 const segmentationData = [
-  { c1: "Not Specified", c2: "800", c3: "#363636", color: "#535353" },
   { c1: "Male", c2: "441", c3: "#818bb1", color: "#595f77" },
   { c1: "Female", c2: "233", c3: "#2c365d", color: "#232942" },
   { c1: "Other", c2: "126", c3: "#334ed8", color: "#2c3051" },
+
 ];
 
  
 export default function Dashboard() {
-  const { user } = React.useContext(UserContext);
-
+  const { user, updateUser } = React.useContext(UserContext);
   const [showSidebar, onSetShowSidebar] = useState(false);
+  const[mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    if(mounted){
+      const check =  JSON.parse(localStorage.getItem("user"));
+      if(check == null){
+        updateUser({loginStatus: false, user:{}});
+        return
+      }
+        updateUser(check);
+    }  
+  }, [mounted]);
+
+
+  useEffect(() => {
+    setMounted(true);
+  },[])
 
   return (
     <>
-      {user?.loginStatus ? (
+      {
+
+      user?.loginStatus ? (
 
         <div className="dashboardContainer flex">
         <Sidebar
@@ -98,7 +111,7 @@ export default function Dashboard() {
       </div>
     ):
     (
-      <h1><Link to='/login' >Login First</Link></h1>  
+      <LoginFirst/> 
     )}
     </>
     );
@@ -118,7 +131,7 @@ function Content({ onSidebarHide }) {
 
   const [search , setSearch] = useState("");
 
-  const satistfactionData = "Rehovot, Israel, Feb.  17, 2023  (GLOBE NEWSWIRE) --  G Medical Innovations Holdings Ltd. (Nasdaq: GMVD) (the “Company”) announced today that on February 16, 2023, the Company received notice from the Listing Qualifications Department (the “Staff”) of The Nasdaq Stock Market LLC (“Nasdaq”) that, based upon the Company’s non-compliance with the stockholders’ equity requirement for continued listing on The Nasdaq Capital Market, as set forth in Nasdaq Listing Rule 5550(b) (the “Equity Rule”), the Company is subject to delisting from Nasdaq unless the Company timely requests a hearing before a Nasdaq Hearings Panel (the “Panel”).  Accordingly, the Company plans to timely request a hearing before the Panel, which will stay any delisting or suspension action pending the hearing and the expiration of any additional extension period granted by the Panel following the hearing."
+  const satistfactionData = "Shares of XYZ company rose today after the company reported strong earnings in the latest quarter. The positive earnings report was driven by increased sales and cost-cutting measures, and analysts are optimistic about the company's future prospects. The company's CEO expressed confidence in the company's growth potential, and investors responded positively, pushing the stock price up by 5%."
 
   const handelSearch = (e) => {
     e.preventDefault();
@@ -297,15 +310,45 @@ function TopCountries() {
 }
 
 function Segmentation() {
+
+  const [data , setData] = useState([])
+  const [loading , setLoading] = useState(true)
+
+  const category_data = async () => {
+      await axios.get("http://localhost:5000/categorycount").
+      then((res) => {
+      const data = res.data
+      setData(data)
+      setLoading(false)
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+  }
+
+  useEffect(() => {
+    category_data()
+  }, [])
+
+
+
   return (
+    <>
+    {loading ? <Loading/> :
+
     <div className="p-4 h-full">
       <div className="flex justify-between items-center">
-        <div className="text-white font-bold">Segmentation</div>
+        <div className="text-white font-bold">Stock Categoires</div>
 
         <Icon path="res-react-dash-options" className="w-2 h-2" />
       </div>
-      <div className="mt-3">All users</div>
-      {segmentationData.map(({ c1, c2, c3, color }) => (
+      <div className="mt-3">&nbsp;</div>
+      {segmentationData.map(({ c1, c2, c3, color },index) => {
+        
+        const category_data = data[index]
+        console.log(category_data)
+        
+        return(
         <div className="flex items-center" key={c1}>
           <div
             className="w-2 h-2 rounded-full"
@@ -314,11 +357,11 @@ function Segmentation() {
             }}
           />
           <div className="ml-2" style={{ color }}>
-            {c1}
+            {category_data.stock_type}
           </div>
           <div className="flex-grow" />
           <div className="" style={{ color }}>
-            {c2}
+            {category_data.stock_count}
           </div>
           <div className="ml-2 w-12 card-stack-border" />
           <div className="ml-2 h-8">
@@ -337,14 +380,11 @@ function Segmentation() {
             </div>
           </div>
         </div>
-      ))}
-
-      <div className="flex mt-3 px-3 items-center justify-between bg-details rounded-xl w-36 h-12">
-        <div className="">Details</div>
-        <Icon path="res-react-dash-chevron-right" className="w-4 h-4" />
-      </div>
+      )})}
     </div>
-  );
+    }
+    </>
+  )
 }
 
 

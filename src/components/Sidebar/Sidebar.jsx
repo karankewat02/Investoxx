@@ -43,6 +43,7 @@ export default function Sidebar({ onSidebarHide, showSidebar }) {
   const handelLogout = () => {
     setLoading(true);
     updateUser(null);
+    localStorage.removeItem("user");
     toast("Logged out successfully", {icon: "👋"});
     navigate("/");
   };
@@ -90,17 +91,7 @@ export default function Sidebar({ onSidebarHide, showSidebar }) {
                 link={i.link}
               />
             ))}
-            {/* <div className="mt-8 mb-0 font-bold px-3 block sm:hidden xl:block">
-              SHORTCUTS
-            </div>
-            {sidebarItems[1].map((i) => (
-              <MenuItem
-                key={i.id}
-                item={i}
-                onClick={setSelected}
-                selected={selected}
-              />
-            ))} */}
+
             <div className="flex-grow" />
           </div>
 
