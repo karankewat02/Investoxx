@@ -1,7 +1,7 @@
 require('dotenv').config()
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 const POLARDBconnection = require('./POLARDB.config');
 
 const authRoute = require('./routes/auth');
@@ -23,7 +23,7 @@ app.use(cors());
 // GET INDEX Data
 app.post('/index', async(req, res) => {
     const symbol = req.body.symbol;
-    const API = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=5d&range=2mo`
+    const API = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=1d&range=2mo`
     await axios.get(API)
         .then((response) => {
             const data = response.data.chart.result[0].indicators.quote[0];
@@ -60,7 +60,7 @@ app.post('/index', async(req, res) => {
 // Get the sentiment of the News
 app.post('/sentiment', async(req, res) => {
     const news =  req.body.news;
-    const API = "http://127.0.0.1:8000/get_news_analysis/"
+    const API = `${process.env.PREDICTIONENDPOINT}/get_news_analysis/`
     await axios.post(API, {
         news: news
     })
@@ -70,7 +70,7 @@ app.post('/sentiment', async(req, res) => {
     .catch((error) => {
         res.status(400).send({error: error, message: 'Error fetching data'});
     });
-
+    
 })
 
 //AUTH ROUTES
@@ -85,53 +85,14 @@ app.use('/api/portfolio', portfolioRoute);
 // WATCHLIST ROUTES
 app.use('/api/watchlist', watchlistRoute);
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
 
 
-// ! REMOVE THIS ROUTE AFTER TESTING
-
-app.post('/calculate', (req, res) => {
-    // Itterate array of data
-    result=[];
-    data.forEach((stock) => {
-
-        // convert marketCap to number string of this format 10,000,000,000
-        let marketcap = Number(stock.marketCap.replace(/,/g, ''));
-
-        
-        if (marketcap > 10000000000) {
-            // Push the stock to the result array
-            result.push({...stock,"marketSize":"large"});
-        } else if (marketcap < 10000000000 && marketcap > 2000000000) {
-            result.push({...stock,"marketSize":"medium"});
-        } else {
-            result.push({...stock,"marketSize":"small"});
-        }
-    });
-
-            for(let i=1; i<=50; i++){
-            // random number between 1 and 400
-            let random = Math.floor(Math.random() * 400) + 1;
-            randomresult = midCap[random]
-            result.push({
-                "Symbol": randomresult.symbol,
-                "Name": randomresult.Security,
-                "marketCap": "7,000,000,000",
-                "marketSize": "mid"
-              });
-        }
-
-    // Send the result array as a response
-    res.send(result);
-});
 
 // GET count of stocks
 
 app.get('/count', (req, res) => {
     const SQL = 'SELECT COUNT(*) as count FROM stock_analysis;'
-
+    
     POLARDBconnection.query(SQL, (err, result) => {
         if (err) {
             res.status(400).send({error: err, message: 'Error fetching data'});
@@ -139,8 +100,26 @@ app.get('/count', (req, res) => {
             res.status(200).send(result);
         }
     });
+    
+});
 
+
+app.get('/categorycount', (req, res) => {
+    
+    const SQL = `SELECT stock_type, COUNT(stock_type) AS stock_count FROM stock_analysis GROUP BY stock_type HAVING COUNT(stock_type) > 1`;
+    
+    POLARDBconnection.query(SQL, (err, result) => {
+        if (err) {
+            res.status(400).send({error: err, message: 'Error fetching data'});
+        } else {
+            res.status(200).send(result);
+        }
+    });
+    
 });
 
 
 
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});

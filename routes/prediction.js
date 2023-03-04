@@ -5,6 +5,24 @@ const axios = require('axios');
 
 const BASE_URL = 'http://localhost:5000/api/prediction/';
 
+const API_KEY_LIST = [
+    "mTntCA4FiZkA0GmpM3Gxs8fCfBtbvOos",
+    "T7KKLBmDWopzabouJya8JQBeHe5q2Lo5",
+    "YRFWLLSLQKHLErOMpT4_IKxZJmA2fUUp",
+    "CgxTVaE7tqACpdrTgNuS57MuM6tlw5Vc",
+    "g5y8yAWfO77JOw_Bx4GTpbSZeLivXWVS",
+    "PNcXk4rdjs8Bvk8x7YC21iSzXHDCMNp3",
+    "UgYxlzJuWV2j_JNA6jwrX5Al8Ta2dwIU",
+    "o7G7kZIr8vm5FIBQM6215uIwpOEZaLoo",
+    "3y3Ni2LAvM7gMhp6SgWvlq9AqXHkBLNC",
+    "3y3Ni2LAvM7gMhp6SgWvlq9AqXHkBLNC",
+    "ADu65LsibS7Cpf0l_yHmbNNf2YhMZTkz",
+    "OcdHW8Khs_l654JLcXWIIjyXWL85m5my",
+    "xfJ3Lk3XZIreeed6fySiXSyhVfXgxlrc",
+    "OXL5ANG2QlS_3Ec70gSQpxgjwi06hHGx",
+    "rXs3qp0O8Kzj2hY4c3TqpavaLpj21YYy"
+]
+
 
 // GET STOCK PREDICTION DATA
 router.get('/get-prediction/:symbol', (req, res) => {
@@ -37,7 +55,8 @@ router.post('/add-prediction', async (req, res) => {
     let marketCap;
     let stockType;
 
-    const tickerapi = `https://api.polygon.io/v3/reference/tickers/${symbol}?apiKey=_UQ5h1LONGUswPwxAjNXISHMSwRoWAtH`;
+    const API_KEY = API_KEY_LIST[Math.floor(Math.random() * API_KEY_LIST.length)];
+    const tickerapi = `https://api.polygon.io/v3/reference/tickers/${symbol}?apiKey=${API_KEY}`;
 
     await axios.get(tickerapi)
         .then(async (response) => {
@@ -59,7 +78,7 @@ router.post('/add-prediction', async (req, res) => {
             let predictedPrice = 0;
         
             // Fetch last known price and predicted price from the API
-            await axios.post(process.env.PREDICTIONENDPOINT, {
+            await axios.post(`${process.env.PREDICTIONENDPOINT}/get_prediction/`, {
                     symbol: symbol,
                 })
                 .then((response) => {
@@ -95,10 +114,6 @@ router.post('/add-prediction', async (req, res) => {
             res.end();
         });
     
-
-
-
-
 });
 
 
@@ -110,10 +125,12 @@ router.post('/update-prediction', async (req, res) => {
     let marketCap;
     let stockType;
 
-    const tickerapi = `https://api.polygon.io/v3/reference/tickers/${symbol}?apiKey=_UQ5h1LONGUswPwxAjNXISHMSwRoWAtH`;
+    const API_KEY = API_KEY_LIST[Math.floor(Math.random() * API_KEY_LIST.length)];
+    const tickerapi = `https://api.polygon.io/v3/reference/tickers/${symbol}?apiKey=${API_KEY}`;
 
     await axios.get(tickerapi)
-        .then((response) => {
+        .then(async (response) => {
+            if(response.data.status != "ERROR") {
             name = response.data.results.name;
             marketCap = response.data.results.market_cap;
             if (marketCap < 2000000000) {
@@ -128,6 +145,42 @@ router.post('/update-prediction', async (req, res) => {
                 stockType = 'mid';
             }
 
+            let lastKnownPrice = 0;
+            let predictedPrice = 0;
+        
+            // Fetch last known price and predicted price from the API
+            await axios.post(`${process.env.PREDICTIONENDPOINT}/get_prediction/`, {
+                    symbol: symbol,
+                })
+                .then((response) => {
+                    console.log(response.data);   
+                    lastKnownPrice = response.data.prediction.current;
+                    predictedPrice = response.data.prediction.prediction;
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
+        
+            const SQL = `UPDATE stock_analysis SET name = '${name}', market_cap = '${marketCap}', stock_type = '${stockType}', last_known_price = '${lastKnownPrice}', predicted_performance = '${predictedPrice}' WHERE symbol = '${symbol}';`;
+        
+            POLARDBconnection.query(SQL, (err, result) => {
+                if (err) {
+                    console.log(err);
+                    res.status(500).send({error: err});
+                } else {
+                    var status = 200;
+                    var message = 'Data Updated';
+                    if(result.affectedRows == 0) {
+                        status = 404;
+                        message = 'Ticker not found';            
+                    }
+                    res.status(status).send({message: message, result});
+                }
+            });
+        } else {
+            res.status(500).send({"error": "API Limit exceded"});
+        }
+
         })
         .catch((error) => {
             console.log(error);
@@ -135,38 +188,7 @@ router.post('/update-prediction', async (req, res) => {
         });
     
 
-    let lastKnownPrice = 0;
-    let predictedPrice = 0;
 
-    // Fetch last known price and predicted price from the API
-    await axios.post(process.env.PREDICTIONENDPOINT, {
-            symbol: symbol,
-        })
-        .then((response) => {
-            console.log(response.data);   
-            lastKnownPrice = response.data.prediction.current;
-            predictedPrice = response.data.prediction.prediction;
-        })
-        .catch((error) => {
-            console.log(error);
-        });
-
-    const SQL = `UPDATE stock_analysis SET name = '${name}', market_cap = '${marketCap}', stock_type = '${stockType}', last_known_price = '${lastKnownPrice}', predicted_performance = '${predictedPrice}' WHERE symbol = '${symbol}';`;
-
-    POLARDBconnection.query(SQL, (err, result) => {
-        if (err) {
-            console.log(err);
-            res.status(500).send({error: err});
-        } else {
-            var status = 200;
-            var message = 'Data Updated';
-            if(result.affectedRows == 0) {
-                status = 404;
-                message = 'Ticker not found';            
-            }
-            res.status(status).send({message: message, result});
-        }
-    });
 
 });
 
