@@ -17,25 +17,8 @@ import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
 
-API_KEY_LIST = [
-    "mTntCA4FiZkA0GmpM3Gxs8fCfBtbvOos",
-    "T7KKLBmDWopzabouJya8JQBeHe5q2Lo5",
-    "YRFWLLSLQKHLErOMpT4_IKxZJmA2fUUp",
-    "CgxTVaE7tqACpdrTgNuS57MuM6tlw5Vc",
-    "g5y8yAWfO77JOw_Bx4GTpbSZeLivXWVS",
-    "PNcXk4rdjs8Bvk8x7YC21iSzXHDCMNp3",
-    "UgYxlzJuWV2j_JNA6jwrX5Al8Ta2dwIU",
-    "o7G7kZIr8vm5FIBQM6215uIwpOEZaLoo",
-    "3y3Ni2LAvM7gMhp6SgWvlq9AqXHkBLNC",
-    "3y3Ni2LAvM7gMhp6SgWvlq9AqXHkBLNC",
-    "ADu65LsibS7Cpf0l_yHmbNNf2YhMZTkz",
-    "OcdHW8Khs_l654JLcXWIIjyXWL85m5my",
-    "xfJ3Lk3XZIreeed6fySiXSyhVfXgxlrc",
-    "OXL5ANG2QlS_3Ec70gSQpxgjwi06hHGx",
-    "rXs3qp0O8Kzj2hY4c3TqpavaLpj21YYy"
-]
+API_KEY_LIST = ["mTntCA4FiZkA0GmpM3Gxs8fCfBtbvOos","T7KKLBmDWopzabouJya8JQBeHe5q2Lo5","YRFWLLSLQKHLErOMpT4_IKxZJmA2fUUp","CgxTVaE7tqACpdrTgNuS57MuM6tlw5Vc","g5y8yAWfO77JOw_Bx4GTpbSZeLivXWVS","PNcXk4rdjs8Bvk8x7YC21iSzXHDCMNp3","UgYxlzJuWV2j_JNA6jwrX5Al8Ta2dwIU","o7G7kZIr8vm5FIBQM6215uIwpOEZaLoo","3y3Ni2LAvM7gMhp6SgWvlq9AqXHkBLNC","3y3Ni2LAvM7gMhp6SgWvlq9AqXHkBLNC","ADu65LsibS7Cpf0l_yHmbNNf2YhMZTkz","OcdHW8Khs_l654JLcXWIIjyXWL85m5my","xfJ3Lk3XZIreeed6fySiXSyhVfXgxlrc","OXL5ANG2QlS_3Ec70gSQpxgjwi06hHGx","rXs3qp0O8Kzj2hY4c3TqpavaLpj21YYy"]
 
-API_KEY_LIST[np.random.randint(0, len(API_KEY_LIST))]
 
 
 def predict_stock_performance(symbol):
