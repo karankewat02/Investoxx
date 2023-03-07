@@ -3,52 +3,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap');
 
 .homeContainer{
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    background-color: var(--background);
-    
+    z-index: 10;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
 }
 
-/* canvas[data-engine="three.js r149"] {
-    height: 800px; 
-  } */
-
-.homeContainer .splineModel{
+.homeContainer>video{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    inset: 0;
+    object-fit: cover;
+    /* z-index: 1; */
     width: 100%;
     height: 100%;
-    z-index: 1;
-    opacity: .75;
+    /* filter: blur(5px); */
+
 }
 
+
 .homeContainer .hero{
-    background-color: transparent;
-    z-index: 100;
+    background: #090d2b;
+    background: -moz-linear-gradient(180deg, rgba(9,13,43,0.1) 0%, rgba(9,13,43,0.3) 15%, rgba(9,13,43,0.5) 31%, rgba(9,13,43,0.7) 47%, rgba(9,13,43,0.9) 62%, rgba(9,13,43,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(9,13,43,0.1) 0%, rgba(9,13,43,0.3) 15%, rgba(9,13,43,0.5) 31%, rgba(9,13,43,0.7) 47%, rgba(9,13,43,0.9) 62%, rgba(9,13,43,1) 100%);
+    background: linear-gradient(180deg, rgba(9,13,43,0.1) 0%, rgba(9,13,43,0.3) 15%, rgba(9,13,43,0.5) 31%, rgba(9,13,43,0.7) 47%, rgba(9,13,43,0.9) 62%, rgba(9,13,43,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090d2b",endColorstr="#090d2b",GradientType=1);
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+    z-index: 5;
 }
 
-.homeContainer .hero h1{
-    font-size: 4rem;
+.homeContainer .hero h2{
+    font-size: 5rem;
     font-weight: 900;
-    font-family: 'Domine', serif;
+    font-family: 'Lato', sans-serif;
     color: #fff;
-    background-image: url("https://gifdb.com/images/thumbnail/cmy-color-gradient-fade-5ofu5wqnm7texgrm.gif");
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: 3px;
-}
+    text-align: center;
+}   
 
 .homeContainer .hero p{
-    font-size: 2rem;
+    width: 50vw;
+    text-align: center;
+    color: #ffffffa9;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+.homeContainer .hero button{
+    padding: 10px;
+
+}
+#bottone1 {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: #2C4DDE;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
     color: #fff;
+   }
+   
+#bottone1:hover {
+ box-shadow: 7px 5px 56px -14px #090C7D;
+}
+   
+#bottone1:active {
+ transform: scale(0.97);
+ box-shadow: 7px 5px 56px -10px #090C7D;
 }
 
+.goToTop{
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    width: 50px;
+    aspect-ratio: 1;
+    background-color: #2C4DDE;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+@media screen and (max-width: 768px){
+    .homeContainer .hero h2{
+        font-size: 3rem;
+    }
+    .homeContainer .hero p{
+        width: 80vw;
+    }
+
+}

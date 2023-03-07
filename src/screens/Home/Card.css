@@ -1,0 +1,142 @@
+.cardContainer{
+    background-color: var(--background);
+    font-weight: bold;
+    text-align: center;
+    padding: 5vh 0;
+}
+.cardContainer h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: 1rem;
+}
+.cardContainer>div:first-of-type{
+    margin: 5vh auto;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    gap: 1rem;
+}
+
+
+.c-s-card{
+    background-color: rgba(255, 255, 255, 0.101);
+    min-height: 40vh;
+    width: 40vh;
+    border-radius: 10%;
+}
+.c-s-card h2{
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+.c-s-card p{
+    margin-top: 2rem;
+}
+
+.s-Card {
+    position: relative;
+    width: 220px;
+    height: 320px;
+    background: rgb(246,246,246);
+    background: -moz-linear-gradient(283deg, rgba(246,246,246,1) 29%, rgba(255,255,255,1) 49%, rgba(200,200,200,1) 100%);
+    background: -webkit-linear-gradient(283deg, rgba(246,246,246,1) 29%, rgba(255,255,255,1) 49%, rgba(200,200,200,1) 100%);
+    background: linear-gradient(283deg, rgba(246,246,246,1) 29%, rgba(255,255,255,1) 49%, rgba(200,200,200,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6f6f6",endColorstr="#c8c8c8",GradientType=1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    /* color: aliceblue; */
+  }
+  
+  .s-Card::before,
+  .s-Card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    /* background-color: hsla(195, 74%, 62%, 0.55); */
+    background-color: #62aec8;
+    transition: all 0.5s;
+  }
+  
+  .s-Card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+    color: hsl(195, 74%, 62%);
+  }
+  
+  .s-Card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+    font-size: medium;
+    color: #1C204B;
+  }
+  
+  .s-Card:hover::before,
+  .s-Card:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+    overflow: hidden;
+  }
+  
+
+  .s-card1:hover:after {
+    content: "Many stock market analysis websites offer technical analysis tools such as moving averages, Bollinger Bands, and other indicators that can help users analyze trends and patterns in the stock market.";
+  }
+  
+  .s-card2:hover:after {
+    content: "These websites typically provide users with up-to-date news and analysis related to the stock market and individual stocks, helping users stay informed and make better investment decisions.";
+  }
+  
+  .s-card3:hover:after {
+    content: "These websites provide users with access to real-time stock prices and charts, which can help them make informed investment decisions.";
+  }
+  
+  .s-card4:hover:after {
+    content: "Many stock market analysis websites allow users to create and manage their investment portfolios, providing features such as asset allocation, risk management, and performance tracking.";
+  }
+  
+  .s-card5:hover:after {
+    content: "JHasfjdadskdajk kakjsdkjahdkah aksb dakjdakjdakjs";
+  }
+  
+  .s-card6:hover:after {
+    content: "JHasfjdadskdajk kakjsdkjahdkah aksb dakjdakjdakjs";
+  }
+
+
+  @media only screen and (max-width: 700px) {
+  
+    .cardContainer>div:first-of-type{
+      
+      grid-template-columns: repeat(2,1fr);
+      place-items: center;
+      gap: 1rem;
+
+    }
+
+    .s-Card{
+      width: 40vw;
+      height: 30vh;
+    }
+  .s-Card:hover:after {
+    font-size: 10px;
+    padding: 5%;
+  }
+  
+  }

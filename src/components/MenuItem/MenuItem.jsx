@@ -1,10 +1,13 @@
 import React from 'react'
 import clsx from 'clsx';
 import SidebarIcons from '../SidebarIcons/SidebarIcons';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 export default function MenuItem({ item: { id, title, notifications }, onClick, selected, link }) {
+
+  const navigate = useNavigate()
+
     return (
       <div
         className={clsx(
@@ -14,7 +17,7 @@ export default function MenuItem({ item: { id, title, notifications }, onClick, 
         onClick={() => onClick(id)}
       >
         <SidebarIcons id={id} />
-        <div className="block sm:hidden xl:block ml-2"><Link to={link}>{title}</Link></div>
+        <div onClick={()=>navigate(link)} className="block sm:hidden xl:block ml-2">{title}</div>
         <div className="block sm:hidden xl:block flex-grow" />
         {notifications && (
           <div className="flex sm:hidden xl:flex bg-pink-600  w-5 h-5 flex items-center justify-center rounded-full mr-2">

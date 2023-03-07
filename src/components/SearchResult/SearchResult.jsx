@@ -7,8 +7,9 @@ import Loading from "../../screens/Loading/Loading";
 import AddComponent from "../AddComponent/AddComponent";
 import Graph from "../Graph/Graph";
 import Icon from "../Icon/Icon";
+import IconButton from "../IconButton/IconButton";
 
-export default function SearchResult() {
+export default function SearchResult({ onSidebarHide }) {
   const [loading, setLoading] = React.useState(true);
   const [found, setFound] = React.useState(false);
   const [data, setData] = React.useState({});
@@ -111,6 +112,24 @@ export default function SearchResult() {
     });
   };
 
+
+  // format of date monthname day
+  const dates = new Date().toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+  });
+
+  const navigate = useNavigate();
+
+  const [search , setSearch] = useState("");
+
+  const satistfactionData = "Shares of XYZ company rose today after the company reported strong earnings in the latest quarter. The positive earnings report was driven by increased sales and cost-cutting measures, and analysts are optimistic about the company's future prospects. The company's CEO expressed confidence in the company's growth potential, and investors responded positively, pushing the stock price up by 5%."
+
+  const handelSearch = (e) => {
+    e.preventDefault();
+    navigate(`/dashboard/search-result/${search}`, {state: {symbol: search}})
+  }
+
   return (
     <>
       {loading ? (
@@ -119,12 +138,57 @@ export default function SearchResult() {
         <div className="flex w-full">
           <div className="w-full h-screen hidden sm:block sm:w-20 xl:w-60 flex-shrink-0"></div>
           <div className=" h-screen flex-grow overflow-x-hidden overflow-auto flex flex-wrap content-start p-2">
+            
+            
+          <div className="w-full sm:flex p-2 items-end">
+          <div className="sm:flex-grow flex justify-between">
+            <div className="">
+              <div className="flex items-center">
+                <div className="text-3xl font-bold text-white">Hello {user?.loginStatus? user.user.name : "Login!"}</div>
+
+              </div>
+              <div className="flex items-center">
+                <Icon
+                  path="res-react-dash-date-indicator"
+                  className="w-3 h-3"
+                />
+                <div className="ml-2">{date}</div>
+              </div>
+            </div>
+            <IconButton
+              icon="res-react-dash-sidebar-open"
+              className="block sm:hidden"
+              onClick={onSidebarHide}
+            />
+          </div>
+          <div className="w-full sm:w-56 mt-4 sm:mt-0 relative">
+            <Icon
+              path="res-react-dash-search"
+              className="w-5 h-5 search-icon left-3 absolute"
+            />
+            <form onSubmit={handelSearch} >
+              <input
+                type="text"
+                name="company_website"
+                id="company_website"
+                className="pl-12 py-2 pr-2 block w-full rounded-lg border-gray-300 bg-card"
+                placeholder="search symbol"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+              />
+            </form>
+          </div>
+        </div>
+            
+            
+            
+            
             <div className="w-full sm:flex p-2 items-end">
               <div className="sm:flex-grow flex justify-between">
                 <div className="text-3xl font-bold text-gray-400 mt5">
                   {data.result[0].name} : {receivedData}
                 </div>
-                <div className="text-1xl text-gray-400">Analysis : {date}</div>
+                <div className="text-1xl text-gray-400">Analysis : {dates}</div>
               </div>
             </div>
 
@@ -160,7 +224,7 @@ export default function SearchResult() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    class="w-5 h-5"
+                    className="w-5 h-5"
                   >
                     <path
                       fill-rule="evenodd"
@@ -190,7 +254,7 @@ export default function SearchResult() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    class="w-5 h-5"
+                    className="w-5 h-5"
                   >
                     <path d="M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
                     <path

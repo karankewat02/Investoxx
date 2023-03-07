@@ -102,11 +102,11 @@ export default function Dashboard() {
 
         <Routes>
           <Route path="" element={<Content onSidebarHide={() => {onSetShowSidebar(true);}}/>} />
-          <Route path="news" element={<News/>} />
-          <Route path="portfolio" element={<Portfolio/>} />
-          <Route path="watchlist" element={<Watchlist />} />
-          <Route path="news-analyse" element={<NewsAnalyse />} />
-          <Route path="search-result/:symbol" element={<SearchResult />} />
+          <Route path="news" element={<News onSidebarHide={() => {onSetShowSidebar(true);}}/>} />
+          <Route path="portfolio" element={<Portfolio onSidebarHide={() => {onSetShowSidebar(true);}}/>} />
+          <Route path="watchlist" element={<Watchlist onSidebarHide={() => {onSetShowSidebar(true);}} />} />
+          <Route path="news-analyse" element={<NewsAnalyse onSidebarHide={() => {onSetShowSidebar(true);}}/>} />
+          <Route path="search-result/:symbol" element={<SearchResult onSidebarHide={() => {onSetShowSidebar(true);}}/>} />
         </Routes>
       </div>
     ):
@@ -213,7 +213,7 @@ function Content({ onSidebarHide }) {
         </div>
         <div className="w-full p-2 lg:w-1/3">
           <div className="rounded-lg bg-card h-80">
-            <TopCountries />
+            <TopStocks />
           </div>
         </div>
 
@@ -239,7 +239,7 @@ function Content({ onSidebarHide }) {
 
 
 
-function TopCountries() {
+function TopStocks() {
 
   const [data , setData] = useState([])
   const [loading , setLoading] = useState(true)
@@ -401,16 +401,6 @@ function IconButton({
         className="w-full h-full"
       />
     </button>
-  );
-}
-
-function Image({ path = "1", className = "w-4 h-4" }) {
-  return (
-    <img
-      src={`https://assets.codepen.io/3685267/${path}.jpg`}
-      alt=""
-      className={clsx(className, "rounded-full")}
-    />
   );
 }
 
