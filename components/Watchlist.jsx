@@ -1,10 +1,14 @@
-import { StyleSheet, Text, View, ScrollView } from 'react-native'
-import React from 'react'
-import ItemCard from './ItemCard'
-import { UserContext } from '../Provider/Auth';
-import axios from 'axios';
+import { StyleSheet, Text, View, ScrollView,Dimensions } from "react-native";
+import React from "react";
+import ItemCard from "./ItemCard";
+import { UserContext } from "../Provider/Auth";
+import axios from "axios";
+import Empty from "./Empty";
 
 const Watchlist = () => {
+
+  const { width, height } = Dimensions.get("window");
+
   const { user } = React.useContext(UserContext);
   const [data, setData] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
@@ -32,32 +36,41 @@ const Watchlist = () => {
   return (
     <>
       {loading ? (
-        <View>
+        <View
+          style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
+        >
           <Text>Loading</Text>
         </View>
       ) : (
-        <View style={styles.ProfolioContainer}>
-          <Text style={styles.userHeading}>{user.user.name}'s Watchlist</Text>
-          <ScrollView>
-            {data?.map((item, index) => {
-              return <ItemCard key={index} watchlist={true} data={item} />;
-            })}
-          </ScrollView>
+        <View>
+          {data.length === 0 ? (
+            <Empty />
+          ) : (
+            <View style={styles.ProfolioContainer}>
+              <Text style={styles.userHeading}>
+                {user.user.name}'s Watchlist
+              </Text>
+              <ScrollView style={{ marginBottom:50  }}>
+                {data?.map((item, index) => {
+                  return <ItemCard key={index} watchlist={true} data={item} />;
+                })}
+              </ScrollView>
+            </View>
+          )}
         </View>
       )}
     </>
-  )
-}
+  );
+};
 
-export default Watchlist
+export default Watchlist;
 
 const styles = StyleSheet.create({
-  ProfolioContainer:{
+  ProfolioContainer: {
     padding: 10,
   },
-  userHeading:{
+  userHeading: {
     fontSize: 20,
-    fontWeight: 'bold',
-  }
-
-})
+    fontWeight: "bold",
+  },
+});

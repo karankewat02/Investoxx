@@ -33,8 +33,8 @@ const Entry = ({ navigation }) => {
       <Text style={styles.text}>Investoxx</Text>
       <Text style={styles.tagLine}>Invest with Confidence</Text>
 
-      <TouchableOpacity>
-        <Text>Get Started</Text>
+      <TouchableOpacity onPress={()=>navigation.navigate("Login")}>
+        <Text style={{fontSize:20 }}>Login</Text>
       </TouchableOpacity>
     </View>
   );

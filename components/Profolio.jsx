@@ -3,6 +3,7 @@ import React from "react";
 import ItemCard from "./ItemCard";
 import { UserContext } from "../Provider/Auth";
 import axios from "axios";
+import Empty from "./Empty";
 const Profolio = () => {
   const { user } = React.useContext(UserContext);
   const [data, setData] = React.useState([]);
@@ -31,17 +32,27 @@ const Profolio = () => {
   return (
     <>
       {loading ? (
-        <View>
+        <View
+          style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
+        >
           <Text>Loading</Text>
         </View>
       ) : (
-        <View style={styles.ProfolioContainer}>
-          <Text style={styles.userHeading}>{user.user.name}'s Portfolio</Text>
-          <ScrollView>
-            {data?.map((item, index) => {
-              return <ItemCard key={index} watchlist={false} data={item} />;
-            })}
-          </ScrollView>
+        <View>
+          {data.length === 0 ? (
+            <Empty />
+          ) : (
+            <View style={styles.ProfolioContainer}>
+              <Text style={styles.userHeading}>
+                {user.user.name}'s Portfolio
+              </Text>
+              <ScrollView>
+                {data?.map((item, index) => {
+                  return <ItemCard key={index} watchlist={false} data={item} />;
+                })}
+              </ScrollView>
+            </View>
+          )}
         </View>
       )}
     </>
