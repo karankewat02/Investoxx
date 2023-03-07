@@ -78,6 +78,22 @@ Investoxx is a platform that helps users create and manage stock portfolios usin
     NOTE : The backend server should be running before the frontend server.
     ```
 
-6. Open the browser and go to [`http://localhost:3000/`](http://localhost:3000/) to view the project.
+
+
+7. Open the browser and go to [`http://localhost:3000/`](http://localhost:3000/) to view the project.
+
+## Common Issues and Solutions
+
+- If you are running the project on linux or mac, then you might face the error of pypywin32 unable to install. To solve this issue, go to the `django` folder and open the `requirements.txt` file. Remove the line `pypiwin32==223` from the file and save it. Then run the following command in the `django` folder.
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+- If the application keeps loading, then the backend server is not running. Please check the backend server is running or not. Try to run the backend server again.
+
+- If node js backend is not running, make sure there is nothing running on port 5000.
+
+- If the application is not loading, then the frontend server is not running. Please check the frontend server is running or not. Try to run the frontend server again.
+
 
 ### If you face any issues, please contact [Karan Kewat](mailto:karankewat2911@gmail.com) or [Juhi Nema](mailto:juhinema200@gmail.com).
