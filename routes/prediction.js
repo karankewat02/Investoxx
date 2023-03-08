@@ -261,6 +261,29 @@ router.get('/get-top-stocks', (req, res) => {
 
 })
 
+// Delete the stock
+
+router.post('/delete-stock', (req, res) => {
+    const symbol = req.body.symbol;
+    const SQL = `DELETE FROM stock_analysis WHERE symbol = '${symbol}';`;
+
+    POLARDBconnection.query(SQL, (err, result) => {
+        if (err) {
+            console.log(err);
+            res.status(500).send({error: err});
+        } else {
+            var status = 200;
+            var message = 'Data Deleted';
+            if(result.affectedRows == 0) {
+                status = 404;
+                message = 'Ticker not found';
+            }
+            res.status(status).send({message: message, result});
+        }
+    });
+});
+
+
 
 
 module.exports = router;

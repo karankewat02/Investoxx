@@ -20,6 +20,77 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
+
+// GET BLOGS
+
+app.get('/blogs', (req, res) => {
+    const SQL = 'SELECT * FROM blog;'
+
+    POLARDBconnection.query(SQL, (err, result) => {
+        if (err) {
+            res.status(400).send({error: err, message: 'Error fetching data'});
+        } else {
+            res.status(200).send(result);
+        }
+    });
+
+});
+
+// GET BLOG
+
+app.get('/blogs/:id', (req, res) => {
+    const id = req.params.id;
+    const SQL = `SELECT * FROM blog WHERE id = ${id};`
+
+    POLARDBconnection.query(SQL, (err, result) => {
+        if (err) {
+            res.status(400).send({error: err, message: 'Error fetching data'});
+        } else {
+            res.status(200).send(result);
+        }
+    });
+
+});
+
+
+// ADD BLOGS
+
+app.post('/blogs', (req, res) => {
+    const title = req.body.title;
+    const content = req.body.content;
+    const author = req.body.author;
+    const img_url = req.body.img_url;
+    const SQL = `INSERT INTO blog (title, content, author, img_url) VALUES ('${title}', '${content}', '${author}', '${img_url}');`
+
+    POLARDBconnection.query(SQL, (err, result) => {
+        if (err) {
+            res.status(400).send({error: err, message: 'Error fetching data'});
+        } else {
+            res.status(200).send(result);
+        }
+    });
+
+});
+
+// DELETE BLOGS
+
+app.delete('/blogs/:id', (req, res) => {
+    const id = req.params.id;
+    const SQL = `DELETE FROM blog WHERE id = ${id};`
+
+    POLARDBconnection.query(SQL, (err, result) => {
+        if (err) {
+            res.status(400).send({error: err, message: 'Error fetching data'});
+        } else {
+            res.status(200).send(result);
+        }
+    });
+
+});
+
+
+
+
 // GET INDEX Data
 app.post('/index', async(req, res) => {
     const symbol = req.body.symbol;

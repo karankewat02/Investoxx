@@ -85,6 +85,41 @@ router.post('/login', (req, res) => {
 });
 
 
+// GET All USER DATA
+
+router.get('/get-all-user-data/', (req, res) => {
+    const SQL = `SELECT * FROM users;`;
+
+    POLARDBconnection.query(SQL, (err, result) => {
+        if (err) {
+            console.log(err);
+            res.status(500).send({error: err, message: 'Error'});
+        } else {
+            res.status(200).send({message: 'All user data fetched', result});
+        }
+    });
+});
+
+
+// DELETE USER
+
+router.post('/delete-user', (req, res) => {
+    const email = req.body.email;
+    const SQL = `DELETE FROM users WHERE email = '${email}';`;
+
+    POLARDBconnection.query(SQL, (err, result) => {
+        if (err) {
+            console.log(err);
+            res.status(500).send({error: err, message: 'Error'});
+        } else {
+            res.status(200).send({message: 'User deleted successfully', result});
+        }
+    });
+});
+
+
+
+
 
 
     
