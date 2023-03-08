@@ -24,6 +24,28 @@ const API_KEY_LIST = [
 ]
 
 
+// GET ALL STOCK PREDICTION DATA
+router.get('/get-all-stocks', (req, res) => {
+    const SQL = 'SELECT * FROM stock_analysis;';
+
+    POLARDBconnection.query(SQL, (err, result) => {
+        if (err) {
+            console.log(err);
+            res.status(500).send({error: err});
+        } else {
+            console.log(result)
+            let code = 200;
+            let message = 'Success';
+            if(result.length == 0) {
+                code = 404;
+                message = 'No stocks found';
+            }
+            res.status(code).send({message: message, result});
+        }   
+    });
+
+});
+
 // GET STOCK PREDICTION DATA
 router.get('/get-prediction/:symbol', (req, res) => {
     const symbol = req.params.symbol;
