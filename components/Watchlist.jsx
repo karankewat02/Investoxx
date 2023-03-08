@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, ScrollView,Dimensions } from "react-native";
+import { StyleSheet, Text, View, ScrollView } from "react-native";
 import React from "react";
 import ItemCard from "./ItemCard";
 import { UserContext } from "../Provider/Auth";
@@ -7,11 +7,19 @@ import Empty from "./Empty";
 
 const Watchlist = () => {
 
-  const { width, height } = Dimensions.get("window");
 
   const { user } = React.useContext(UserContext);
   const [data, setData] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
+  const [childTracker, setChildTraker] = React.useState(true)
+
+  const tracking = ()=>{
+    setChildTraker(!childTracker);
+  }
+
+  React.useEffect(()=>{
+    getData();
+  }, [childTracker])
 
   React.useEffect(() => {
     getData();
@@ -52,7 +60,7 @@ const Watchlist = () => {
               </Text>
               <ScrollView style={{ marginBottom:50  }}>
                 {data?.map((item, index) => {
-                  return <ItemCard key={index} watchlist={true} data={item} />;
+                  return <ItemCard tracking={tracking} key={index} watchlist={true} data={item} />;
                 })}
               </ScrollView>
             </View>

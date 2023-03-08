@@ -3,7 +3,7 @@ import React from 'react'
 import axios from 'axios';
 import { UserContext } from '../Provider/Auth';
 
-const ItemCard = ({ watchlist,data }) => {
+const ItemCard = ({ watchlist,data,tracking }) => {
     const { user } = React.useContext(UserContext);
     const dateTimeString = data?.added_date;
     const dateString = dateTimeString.substring(0, 10);
@@ -17,6 +17,7 @@ const ItemCard = ({ watchlist,data }) => {
         })
         .then( (res) => {
             alert("Stock Removed Successfully");
+            tracking();
         })
         .catch((err) => {
             console.log(err)

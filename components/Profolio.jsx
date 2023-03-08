@@ -8,10 +8,21 @@ const Profolio = () => {
   const { user } = React.useContext(UserContext);
   const [data, setData] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
+  const [childTracker, setChildTraker] = React.useState(true)
+
+  const tracking = ()=>{
+    setChildTraker(!childTracker);
+  }
+
+  React.useEffect(()=>{
+    getData();
+  }, [childTracker])
+
 
   React.useEffect(() => {
     getData();
   }, []);
+
 
   const getData = async () => {
     await axios
@@ -48,7 +59,7 @@ const Profolio = () => {
               </Text>
               <ScrollView>
                 {data?.map((item, index) => {
-                  return <ItemCard key={index} watchlist={false} data={item} />;
+                  return <ItemCard tracking={tracking} key={index} watchlist={false} data={item} />;
                 })}
               </ScrollView>
             </View>
