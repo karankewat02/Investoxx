@@ -3,8 +3,8 @@ Investoxx is a platform that helps users create and manage stock portfolios usin
 
 ## Investoxx has 3 Platforms:
 - Web App - [investoxx.tech](https://investoxx.tech)
-- Mobile App
-- Desktop App
+- Mobile App - [Downlaod APK](https://investoxx-assets.oss-ap-south-1.aliyuncs.com/Investoxx.apk)
+- Desktop App - [Download Microsoft Installer](https://investoxx-assets.oss-ap-south-1.aliyuncs.com/Investoxx.msi)
 
 ---
 
@@ -12,7 +12,7 @@ Investoxx is a platform that helps users create and manage stock portfolios usin
 ## Preqrequisites
 - [Node.js](https://nodejs.org/en/)
 - [python3](https://www.python.org/downloads/)
-- [git](https://git-scm.com/downloads)
+- [Git](https://git-scm.com/downloads)
 - [SSH key Linked to Github](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 
 
@@ -33,7 +33,7 @@ Investoxx is a platform that helps users create and manage stock portfolios usin
         git clone -b node git@github.com:karankewat02/Investoxx.git node
         ```
 
-3. This will create a folder named `react` or `django` or `node` in the current directory.
+3. This will create a folder named `react`, `django` and `node` in the current directory.
 
 4. Add the `.env` file in the `node` folder. The `.env` file contains the environment variables for the project. The `.env` file is not included in the repository for security reasons.
 
@@ -95,5 +95,85 @@ Investoxx is a platform that helps users create and manage stock portfolios usin
 
 - If the application is not loading, then the frontend server is not running. Please check the frontend server is running or not. Try to run the frontend server again.
 
+
+
+
+---
+
+## `Mobile App` - 
+## Preqrequisites
+- [Node.js](https://nodejs.org/en/)
+- [React Native CLI (Development OS - Windows and Target OS - Android)](https://reactnative.dev/docs/environment-setup)
+- [Android Studio with a virtual device](https://developer.android.com/studio/run/managing-avds)
+- [Git](https://git-scm.com/downloads)
+- [SSH key Linked to Github](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+
+
+## Installation
+
+1. Make a folder for the project and open git bash in that folder.
+2. Clone the repository 
+    - React Native 
+        ```bash
+        git clone -b reactNative git@github.com:karankewat02/Investoxx.git reactNative
+        ```
+
+
+3. This will create a folder named `reactNative` in the current directory.
+
+
+4. Install the dependencies for the project.
+
+    - Open git bash in the `reactNative` folder and run the following command.
+        ```bash
+        npm install
+        ```
+
+5. Run the project.
+    
+    - Open git bash in the `reactNative` folder and run the following command.
+        ```bash
+        npm run android
+        ```
+    
+
+
+---
+
+## `Mobile App` - 
+## Preqrequisites
+- [Node.js](https://nodejs.org/en/)
+- [Rust](https://www.rust-lang.org/tools/install)
+- [Git](https://git-scm.com/downloads)
+- [SSH key Linked to Github](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+
+
+## Installation
+
+1. Make a folder for the project and open git bash in that folder.
+2. Clone the repository 
+    - Taui JS
+        ```bash
+        git clone -b taurijs git@github.com:karankewat02/Investoxx.git taurijs 
+        ```
+
+
+3. This will create a folder named `taurijs` in the current directory.
+
+
+4. Install the dependencies for the project.
+
+    - Open git bash in the `taurijs` folder and run the following command.
+        ```bash
+        npm install
+        ```
+
+5. Run the project.
+    
+    - Open git bash in the `taurijs` folder and run the following command.
+        ```bash
+        npm run tauri dev
+        ```
+---    
 
 ### If you face any issues, please contact [Karan Kewat](mailto:karankewat2911@gmail.com) or [Juhi Nema](mailto:juhinema200@gmail.com).
