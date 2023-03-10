@@ -140,7 +140,7 @@ Investoxx is a platform that helps users create and manage stock portfolios usin
 
 ---
 
-## `Mobile App` - 
+## `Desktop App` - 
 ## Preqrequisites
 - [Node.js](https://nodejs.org/en/)
 - [Rust](https://www.rust-lang.org/tools/install)
