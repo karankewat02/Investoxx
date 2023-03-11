@@ -7,7 +7,7 @@ function login() {
     <div style={{position:"relative"}}>
     {/* <h1 style={{color: 'white'}}>Contact Us</h1> */}
     <Canvas/>
-    <form className="contactFormContainer" action='' id="contact">
+    <form className="contactFormContainer" method='POST' action='https://formspree.io/f/xleknrrk'  id="contact">
         <div className='containner'>
             <h1 style={{color: 'white', textAlign: 'center'}}>Contact <span>Us</span></h1>
             
@@ -19,7 +19,7 @@ function login() {
             <input type='email' name='email' placeholder='Enter email' id='email'/>
             
             <label htmlFor='msg' style={{color: 'white'}}>Message</label>
-            <textarea name='Description' id='msg' required="required" placeholder='Send your message'></textarea>        
+            <textarea name='Message' id='msg' required="required" placeholder='Send your message'></textarea>        
             
             <button className='c-button'> 
                 Submit

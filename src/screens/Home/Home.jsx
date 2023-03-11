@@ -106,11 +106,9 @@ export default function Home() {
               <h2>
                 Invest with <br /> Confidence
               </h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
-                repellat id voluptatibus pariatur voluptates maiores non,
-                corrupti et illo molestiae.\
-              </p>
+              <p>Unlock the future of investing with accurate stock market forecasts. 
+                <br />
+                 Investoxx is a investment platform that leverages advanced technology and analytics to provide all users with reliable stock predictions and expert market analysis</p>
               <br />
               <div>
                 <a href="#services">
@@ -165,7 +163,7 @@ export default function Home() {
                         <span className="terminal_user">investoxx@admin:</span>
                         <span className="terminal_location">~</span>
                         <span className="terminal_bling">
-                          $ <small></small> in DB : {data[2]?.stock_count}
+                          $ small in DB : {data[2]?.stock_count}
                         </span>
                       </div>
                       <div>

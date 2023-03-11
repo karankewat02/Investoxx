@@ -28,7 +28,7 @@ function Used() {
 
                 <div>
                     <h2>Database</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque exercitationem, necessitatibus dolorum nesciunt laborum eos, odit ducimus recusandae cupiditate vitae magni dolorem dolores nobis. Nam, non. Possimus dicta eos ipsam!</p>
+                    <p>Investoxx.tech has implemented PolarDB as its database solution, which provides a fast, reliable, and secure data storage and retrieval system. With its advanced architecture, PolarDB ensures high availability and fault tolerance, making it an ideal choice for businesses that require a robust database solution. Additionally, its scalable design enables it to handle increasing amounts of data as Investoxx.tech grows and expands its operations.​</p>
                 </div>
             </motion.div>
 
@@ -43,7 +43,7 @@ function Used() {
 
                 <div>
                     <h2>Elastic Computing System</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque exercitationem, necessitatibus dolorum nesciunt laborum eos, odit ducimus recusandae cupiditate vitae magni dolorem dolores nobis. Nam, non. Possimus dicta eos ipsam!</p>
+                    <p>Elastic Compute Service (ECS) is a powerful cloud computing solution that hosts the server for Django on Investoxx.tech. This reliable platform is capable of handling heavy workloads, making it an excellent choice for running complex AI models.The use of ECS was possible because we are given an free t5 burstable instance as a part of student benefit. </p>
                 </div>
             </motion.div>
 
@@ -57,7 +57,7 @@ function Used() {
                 </div>
                 <div>
                     <h2>Domain Name System</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque exercitationem, necessitatibus dolorum nesciunt laborum eos, odit ducimus recusandae cupiditate vitae magni dolorem dolores nobis. Nam, non. Possimus dicta eos ipsam!</p>
+                    <p>We've opted for the reliable and secure services of Alibaba Cloud Domain Name Service to register your domain name. With investoxx.tech, you've acquired a highly professional and memorable domain name that's ideally suited for your financial and investment-related website or application​</p>
                 </div>
             </motion.div>
 
@@ -71,7 +71,7 @@ function Used() {
                 </div>
                 <div>
                     <h2>Object Storage Service</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque exercitationem, necessitatibus dolorum nesciunt laborum eos, odit ducimus recusandae cupiditate vitae magni dolorem dolores nobis. Nam, non. Possimus dicta eos ipsam!</p>
+                    <p>Object Storage Service (OSS) is a reliable and scalable solution used to securely store and manage the various assets and files of Investoxx.tech's website. It offers high durability, availability, and accessibility, ensuring that data can be easily retrieved and utilized whenever needed.​</p>
                 </div>
             </motion.div>
 
