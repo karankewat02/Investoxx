@@ -37,7 +37,7 @@ Investoxx is a platform that helps users create and manage stock portfolios usin
 
 4. Add the `.env` file in the `node` folder. The `.env` file contains the environment variables for the project. The `.env` file is not included in the repository for security reasons.
 
-    - Visit [This Link](https://investoxx-assets.oss-ap-south-1.aliyuncs.com/.env) to download the `.env` file.
+    - Visit [This Link](https://investoxx-assets.oss-ap-south-1.aliyuncs.com/.env) to download the `.env` file. If the file is downloaded as `env` than make sure to rename it as `.env`
     - Copy the `.env` file in the `node` folder.
 
 
@@ -88,7 +88,7 @@ Investoxx is a platform that helps users create and manage stock portfolios usin
     ```bash
     pip install -r requirements.txt
     ```
-
+- If the node server crashes make sure the `.env` file is in the `node` folder, also the name of the file is `.env` NOT `env`.
 - If the application keeps loading, then the backend server is not running. Please check the backend server is running or not. Try to run the backend server again.
 
 - If node js backend is not running, make sure there is nothing running on port 5000.
