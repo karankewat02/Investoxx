@@ -34,18 +34,18 @@ router.post('/register', (req, res) => {
                     console.log(err);
                 } else {
                     console.log('Portfolio and WATCHLIST table created');
+                    
+                    POLARDBconnection.query(CREATE_WATCHLIST , (err, result) => {
+                        if (err) {
+                            console.log(err);
+                        } else {
+                            console.log('Portfolio and WATCHLIST table created');
+                            res.status(200).send({message: 'User registered successfully', result});
+                        }
+                    });
                 }
             });
 
-            POLARDBconnection.query(CREATE_WATCHLIST , (err, result) => {
-                if (err) {
-                    console.log(err);
-                } else {
-                    console.log('Portfolio and WATCHLIST table created');
-                }
-            });
-
-            res.status(200).send({message: 'User registered successfully', result});
         }
     });
 });

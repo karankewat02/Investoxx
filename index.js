@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 
-router.get('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Welcome to Investoxx NODE API');
 });
 
