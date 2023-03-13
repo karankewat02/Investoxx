@@ -84,11 +84,46 @@ Investoxx is a platform that helps users create and manage stock portfolios usin
 
 ## Common Issues and Solutions
 
+- If the node server crashes make sure the `.env` file is in the `node` folder, also the name of the file is `.env` NOT `env`.
+
+- If the django server is not starting and giving error of "module name" not found, in that case try to run the django server in an virtual enviornment (venv). Follow these steps - 
+    1. Create a new folder.
+    2. Open terminal in the folder.
+    3. Create a virtual enviornment, run the following command.
+        ```bash
+        python -m venv investoxxenv  
+        ```
+    4. Activate Virtual Environment
+        ```bash
+        cd investoxxenv
+        Scripts\activate
+        ```
+    5. Cloning django source code 
+        ```bash
+        git clone -b django git@github.com:karankewat02/Investoxx.git investoxx
+        ```
+    6. Go to the investoxx folder
+        ```bash
+        cd investoxx
+        ```
+    7. Install requirements
+        ```bash
+        pip install -r requirements.txt
+        ```
+    8. Running server
+        ```bash
+        python manage.py runserver
+        ```
+
+
+- If your django server crashes or you are facing issuse even after trying the solutions, then check if there are multiple version of python is installed. If installed then only keep python3 and remove the others. 
+
+
+
 - If you are running the project on linux or mac, then you might face the error of pypywin32 unable to install. To solve this issue, go to the `django` folder and open the `requirements.txt` file. Remove the line `pypiwin32==223` from the file and save it. Then run the following command in the `django` folder.
     ```bash
     pip install -r requirements.txt
     ```
-- If the node server crashes make sure the `.env` file is in the `node` folder, also the name of the file is `.env` NOT `env`.
 - If the application keeps loading, then the backend server is not running. Please check the backend server is running or not. Try to run the backend server again.
 
 - If node js backend is not running, make sure there is nothing running on port 5000.
